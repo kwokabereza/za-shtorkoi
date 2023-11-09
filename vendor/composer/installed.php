@@ -685,6 +685,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'offline/oc-vite-plugin' => array(
+            'pretty_version' => 'v2.0.9',
+            'version' => '2.0.9.0',
+            'reference' => 'f575b656ad0820345a2e8631da8172ddf26decbf',
+            'type' => 'october-plugin',
+            'install_path' => __DIR__ . '/../../plugins/offline/vite',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'phar-io/manifest' => array(
             'pretty_version' => '2.0.3',
             'version' => '2.0.3.0',

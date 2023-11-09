@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0252653b85562028e96a45641fb7f01",
+    "content-hash": "d3309dbecc30e2740fa99c1f1fdee17e",
     "packages": [
         {
             "name": "brick/math",
@@ -3855,6 +3855,30 @@
                 "tailor"
             ],
             "time": "2023-10-21T00:13:29+00:00"
+        },
+        {
+            "name": "offline/oc-vite-plugin",
+            "version": "v2.0.9",
+            "dist": {
+                "type": "zip",
+                "url": "https://gateway.octobercms.com/composer/dist/offline/oc-vite-plugin/offline-oc-vite-plugin-f575b656ad0820345a2e8631da8172ddf26decbf-zip-af7f16.zip",
+                "reference": "f575b656ad0820345a2e8631da8172ddf26decbf",
+                "shasum": "edfb1307f0f5755dca9e378369aa3f38c13d9860"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "ext-json": "*",
+                "laravel/framework": "^9.0|^10.0",
+                "october/rain": "^3.0",
+                "php": ">=8.0"
+            },
+            "type": "october-plugin",
+            "description": "Vite integration for October CMS",
+            "support": {
+                "source": "https://github.com/OFFLINE-GmbH/oc-vite-plugin/tree/v2.0.9",
+                "issues": "https://github.com/OFFLINE-GmbH/oc-vite-plugin/issues"
+            },
+            "time": "2023-10-30T13:56:43+00:00"
         },
         {
             "name": "phpoption/phpoption",
