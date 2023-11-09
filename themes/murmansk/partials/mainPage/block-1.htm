@@ -1,0 +1,28 @@
+<div class="container pt-8 pb-8 md:pt-10 md:pb-10 lg:pt-14 lg:pb-14 xl:pt-20 xl:pb-20">
+    <div class="flex flex-wrap xl:items-center -mx-4">
+        <div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
+            <h2 class="mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight">Пошив штор по индивидуальным размерам.</h2>
+            <p class="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">Поможем с выбором тканей и моделей штор, специально для вас и под ваш интерьер. Вам больше не нужно думать об этом.</p>
+            <div class="flex flex-wrap">
+                {% partial "button/in_block-1" %}
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 px-4">
+            <div class="relative mx-auto md:mr-0 max-w-max">
+                <img class="absolute z-10 -left-14 -top-12 w-28 md:w-auto" src="{{ 'assets/images/elements/circle3-purple.svg' | theme }}" alt="">
+                <img class="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto" src="{{ 'assets/images/elements/dots3-yellow.svg' | theme }}" alt="">
+                {% partial "helpers/image"
+                src= "themes/murmansk/assets/images/banner.jpg"
+                mobSrc= "themes/murmansk/assets/images/banner.jpg"
+                width = 2232
+                height = 2417
+                mobWidth = 2232
+                mobHeight = 2417
+                alt = "banner"
+                class= "relative rounded-xl"
+                %}
+            </div>
+        </div>
+    </div>
+</div>
+{% partial "modal/modal_block-1" %}

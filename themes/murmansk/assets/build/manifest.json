@@ -1,0 +1,17 @@
+{
+  "src/css/global.css": {
+    "file": "assets/global-a40861ec.css",
+    "isEntry": true,
+    "src": "src/css/global.css"
+  },
+  "src/js/global.js": {
+    "file": "assets/main-65903f40.js",
+    "isEntry": true,
+    "src": "src/js/global.js"
+  },
+  "src/js/index.js": {
+    "file": "assets/index-83eb4dc7.js",
+    "isEntry": true,
+    "src": "src/js/index.js"
+  }
+}

@@ -1,0 +1,48 @@
+.arrowLeft:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-top: 110px solid transparent;
+    border-bottom: 110px solid transparent;
+    border-right: 80px solid #0094d2;
+
+}
+.arrowLeft:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0px;
+    bottom: 0;
+    border-top: 110px solid transparent;
+    border-bottom: 110px solid transparent;
+    border-right: 80px solid #fff;
+    border-left: 1px solid transparent;
+}
+.arrowRight:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-top: 110px solid transparent;
+    border-bottom: 110px solid transparent;
+    border-left: 80px solid #0094d2;
+}
+.arrowRight:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    border-top: 110px solid transparent;
+    border-bottom: 110px solid transparent;
+    border-left: 80px solid #fff;
+    border-right: 1px solid transparent;
+}
+@media (max-width:1280px){
+.arrowRight:after, .arrowRight:before, .arrowLeft:before, .arrowLeft:after{
+    display: none;
+}
+}
