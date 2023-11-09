@@ -24,7 +24,7 @@ module.exports = {
                 '50': '50%',
             },
             colors: {
-                'lightgray': '#e2f3ff',
+                'lightgray': '#556987',
                 'gray':'#515b76',
                 'lightpink':'#ebcdcf',
             },
