@@ -57,12 +57,12 @@
         /*backdrop-filter: blur(4px);*/
         transition: all 0.8s ease 0s;
     }
-    .modal-consultation.active, .modal-questions.active, .modal-reviews.active, .modal-measurement.active{
+    .modal-consultation.active, .modal-measurement.active, .modal-application.active{
         opacity: 1;
         visibility: visible;
         background: rgba(0, 0, 0, 0.38);
     }
-    .modal-consultation.active .modal_content, .modal-questions.active .modal_content, .modal-reviews.active .modal_content,.modal-measurement.active .modal_content{
+    .modal-consultation.active .modal_content, .modal-measurement.active .modal_content, .modal-application.active .modal_content{
         transform: translate(0px, 0px);
         opacity: 1;
         display: block;
@@ -82,6 +82,94 @@
     /*блок1*/
 
     /*блок2*/
+    .animate-heading {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    .animate-heading.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transform: translateY(0%);
+    }
+    .animate-around.element-animation {
+        opacity: 0;
+    }
+    .animate-around.element-animation.element-show {
+        animation: around 2s forwards;
+    }
+    @keyframes around {
+        from {
+            opacity: 0;
+            transform: rotateY(180deg);
+        }
+        to {
+            opacity: 1;
+            transform: rotateY(360deg);
+        }
+    }
+
+    /*блок3*/
+
+    .scheme-1.element-animation{
+        opacity: 0;
+        transform: translatey(20%);
+    }
+    .scheme-1.element-animation.element-show{
+        animation: opacity 1s forwards;
+    }
+    @keyframes opacity {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+    .scheme-2.element-animation{
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    .scheme-2.element-animation.element-show{
+        animation: opacity 1s forwards;
+        animation-delay: 0.3s;
+    }
+    .scheme-3.element-animation{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    .scheme-3.element-animation.element-show{
+        animation: opacity 1s forwards;
+        animation-delay: 0.6s;
+    }
+    .scheme-4.element-animation{
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    .scheme-4.element-animation.element-show{
+        animation: opacity 1s forwards;
+        animation-delay: 0.9s;
+    }
+    .scheme-5.element-animation{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    .scheme-5.element-animation.element-show{
+        animation: opacity 1s forwards;
+        animation-delay: 1.2s;
+    }
+    @media (max-width: 1280px) {
+        .scheme-5.element-animation{
+            opacity: 0;
+            transform: translateY(-20%);
+        }
+    }
+    @media (max-width: 1024px) {
+        .scheme-1.element-animation, .scheme-2.element-animation, .scheme-3.element-animation, .scheme-4.element-animation{
+            opacity: 0;
+            transform: translateY(-20%);
+        }
+    }
 
     /* увеличение фото при наведении на карточку */
     .servicesCard:hover img{
@@ -132,15 +220,6 @@
         transform: scale(1) translateY(-50%);
     }
 
-    /*.servicesCard:after {*/
-    /*    -webkit-transform: scale(0) rotate(-360deg) translateY(-50%);*/
-    /*    transform: scale(0) rotate(-360deg) translateY(-50%);*/
-    /*}*/
-
-    /*.servicesCard:hover:after {*/
-    /*    -webkit-transform: scale(1) rotate(0deg) translateY(-50%);*/
-    /*    transform: scale(1) rotate(0deg) translateY(-50%);*/
-    /*}*/
     /*блок5*/
 
     @media (max-width: 1280px) {
@@ -152,6 +231,73 @@
         .servicesCard:after {
             font-size: 20px;
         }
+    }
+    /* ХЕДЕР, ФУТЕР */
+    .underline-one:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        width: 0;
+        height: 1px; /* Высота линии */
+        background-color: white; /* Цвет подчеркивания при исчезании линии*/
+        transition: width 0.5s; /* Время эффекта */
+    }
+    .underline-one:hover:after {
+        content: "";
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 1px; /* Высота линии */
+        background-color: #ebcdcf; /* Цвет подчеркивания при появлении линии*/
+        transition: width 0.5s;  /* Время эффекта */
+    }
+    .underline-two:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        width: 0;
+        height: 1px; /* Высота линии */
+        background-color: #515b76; /* Цвет подчеркивания при исчезании линии*/
+        transition: width 0.5s; /* Время эффекта */
+    }
+    .underline-two:hover:after {
+        content: "";
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 1px; /* Высота линии */
+        background-color: #515b76; /* Цвет подчеркивания при появлении линии*/
+        transition: width 0.5s;  /* Время эффекта */
+    }
+    .underline-free:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        width: 0;
+        height: 1px; /* Высота линии */
+        background-color: #515b76; /* Цвет подчеркивания при исчезании линии*/
+        transition: width 0.5s; /* Время эффекта */
+    }
+    .underline-free:hover:after {
+        content: "";
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 1px; /* Высота линии */
+        background-color: #515b76; /* Цвет подчеркивания при появлении линии*/
+        transition: width 0.5s;  /* Время эффекта */
     }
 }
 html{
@@ -179,18 +325,4 @@ body{
 .list ul{
     list-style-position: inside;
     text-align: start;
-}
-/*кнопка переключения на английский*/
-.button a {
-    transition: all .35s ease-Out;
-}
-
-.dub-arrow {
-    transition: all .35s ease-Out;
-}
-.button:hover .dub-arrow {
-    left: 0;
-}
-.button:hover a {
-    left: 150px;
 }

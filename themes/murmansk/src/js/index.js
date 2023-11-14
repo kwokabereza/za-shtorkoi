@@ -1,22 +1,4 @@
-document.querySelectorAll('.consultation').forEach(function(element) {
-    element.addEventListener('click', function() {
-        document.querySelector('.modal-consultation').classList.toggle('active');
-    });
-});
-
-document.querySelectorAll('.modal_area').forEach(function(element) {
-    element.addEventListener('click', function() {
-        document.querySelector('.modal-consultation').classList.remove('active');
-    });
-});
-
-document.querySelectorAll('.modal_close').forEach(function(element) {
-    element.addEventListener('click', function() {
-        document.querySelector('.modal-consultation').classList.remove('active');
-    });
-});
-
-
+// бургер-меню
 document.addEventListener('DOMContentLoaded', function() {
     // Открывать/закрывать меню при клике на бургер
     const burger = document.querySelectorAll('.navbar-burger');
@@ -46,6 +28,94 @@ document.addEventListener('DOMContentLoaded', function() {
         backdropElement.addEventListener('click', toggleMenu);
     });
 });
+
+// модальные окна
+document.querySelectorAll('.consultation').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.querySelector('.modal-consultation').classList.toggle('active');
+    });
+});
+
+document.querySelectorAll('.modal_area').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.querySelector('.modal-consultation').classList.remove('active');
+    });
+});
+
+document.querySelectorAll('.modal_close').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.querySelector('.modal-consultation').classList.remove('active');
+    });
+});
+document.querySelectorAll('.measurement').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.querySelector('.modal-measurement').classList.toggle('active');
+    });
+});
+
+document.querySelectorAll('.modal_area').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.querySelector('.modal-measurement').classList.remove('active');
+    });
+});
+
+document.querySelectorAll('.modal_close').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.querySelector('.modal-measurement').classList.remove('active');
+    });
+});
+document.querySelectorAll('.application').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.querySelector('.modal-application').classList.toggle('active');
+    });
+});
+
+document.querySelectorAll('.modal_area').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.querySelector('.modal-application').classList.remove('active');
+    });
+});
+
+document.querySelectorAll('.modal_close').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.querySelector('.modal-application').classList.remove('active');
+    });
+});
+
+// // анимация при прокрутке до блока
+function onEntry(entry) {
+    entry.forEach(change => {
+        if (change.isIntersecting) {
+            change.target.classList.add('element-show');
+        }
+        // else {
+        //     change.target.classList.remove('element-show');
+        // }
+    });
+}
+let options = { threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+for (let elm of elements) {
+    observer.observe(elm);
+}
+
+function onEntryHeading(entry) {
+    entry.forEach(change => {
+        if (change.isIntersecting) {
+            change.target.classList.add('element-show');
+        }
+        else {
+            change.target.classList.remove('element-show');
+        }
+    });
+}
+let optionsHeading = { threshold: [0.5] };
+let observerHeading = new IntersectionObserver(onEntryHeading, optionsHeading);
+let elementsHeading = document.querySelectorAll('.animate-heading');
+for (let elmHeading of elementsHeading) {
+    observerHeading.observe(elmHeading);
+}
 
 // слайдер на странице услуги
 const swiper = new Swiper('.services-slider',{

@@ -1,16 +1,23 @@
 {
   "src/css/global.css": {
-    "file": "assets/global-a40861ec.css",
+    "file": "assets/global-5def389e.css",
     "isEntry": true,
     "src": "src/css/global.css"
   },
+  "src/js/global.css": {
+    "file": "assets/global-f47d27a2.css",
+    "src": "src/js/global.css"
+  },
   "src/js/global.js": {
-    "file": "assets/main-65903f40.js",
+    "css": [
+      "assets/global-f47d27a2.css"
+    ],
+    "file": "assets/main-1b1a2cae.js",
     "isEntry": true,
     "src": "src/js/global.js"
   },
   "src/js/index.js": {
-    "file": "assets/index-83eb4dc7.js",
+    "file": "assets/index-a1ed353e.js",
     "isEntry": true,
     "src": "src/js/index.js"
   }
