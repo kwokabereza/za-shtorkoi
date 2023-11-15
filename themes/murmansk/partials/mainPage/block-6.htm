@@ -1,12 +1,64 @@
-<div class="section_6 pb-8 pt-8 md:pb-10 md:pt-10 lg:pb-14 lg:pt-14 xl:pb-20 xl:pt-20" id="reviews">
+<div class="section_6 pb-4 pt-8 md:pt-10 lg:pt-14  xl:pt-20" id="reviews">
     <div class="container">
         <div class="mx-auto">
-            <div class="flex items-center justify-center mb-6 md:mb-10 xl:mb-16 animate-heading">
+            <div class="flex items-center justify-center animate-heading">
                 <span class="block border-b-2 border-lightpink mr-4 w-20 ss:w-16"></span>
                 <h2 class="text-center text-gray font-serif font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">Отзывы</h2>
                 <span class="border-b-2 border-lightpink ml-4 w-20 ss:w-16"></span>
             </div>
-            <div class="text-sm xs:text-base md:text-lg xl:text-xl text-justify indent-8">Отзывы клиентов в виде фото</div>
+            <div class="card-container mx-auto relative">
+                <div class="card absolute top-0 left-0 w-full h-full bg-white rounded-md" style="--image: url('themes/murmansk/assets/images/reviews/photo_1.jpg'); --angle: -15deg; --x: -9%; --y: 15%;"></div>
+                <div class="card absolute top-0 left-0 w-full h-full bg-white rounded-md" style="--image: url('themes/murmansk/assets/images/reviews/photo_2.jpg'); --angle: -1deg; --x: -27%; --y: -20%;"></div>
+                <div class="card absolute top-0 left-0 w-full h-full bg-white rounded-md" style="--image: url('themes/murmansk/assets/images/reviews/photo_3.jpg'); --angle: -4deg; --x: -39%; --y: 5%;"></div>
+                <div class="card absolute top-0 left-0 w-full h-full bg-white rounded-md" style="--image: url('themes/murmansk/assets/images/reviews/photo_4.jpg'); --angle: 7deg; --x: -3%; --y: -7%;"></div>
+                <div class="card absolute top-0 left-0 w-full h-full bg-white rounded-md" style="--image: url('themes/murmansk/assets/images/reviews/photo_5.jpg'); --angle: -1deg; --x: 25%; --y: 7%;"></div>
+                <div class="card absolute top-0 left-0 w-full h-full bg-white rounded-md" style="--image: url('themes/murmansk/assets/images/reviews/photo_6.jpg'); --angle: -8deg; --x: 20%; --y: -19%;"></div>
+                <div class="card absolute top-0 left-0 w-full h-full bg-white rounded-md" style="--image: url('themes/murmansk/assets/images/reviews/photo_7.jpg'); --angle: 13deg; --x: 45%; --y: 16%;"></div>
+                <div class="card absolute top-0 left-0 w-full h-full bg-white rounded-md" style="--image: url('themes/murmansk/assets/images/reviews/photo_8.jpg'); --angle: 0deg; --x: 43%; --y: -13%;"></div>
+            </div>
         </div>
     </div>
 </div>
+<style>
+    .card-container {
+        width: 75vmin;
+        height: 90vmin;
+    }
+    .card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fafafa;
+        border-radius: 2px;
+        box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.35);
+        transition: transform 0.35s ease-out;
+        transform: translate(var(--x), var(--y)) scale(0.35) rotate(var(--angle));
+        will-change: transform;
+    }
+    .card:hover {
+        transform: scale(1) rotate(0deg);
+        z-index: 1;
+    }
+    .card:hover:before {
+        opacity: 1;
+    }
+    .card:before {
+        content: "";
+        display: block;
+        width: 90%;
+        height: 80%;
+        margin: 5%;
+        background: var(--image) no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 5px rgba(34, 34, 34, 0.35);
+        border-radius: 2px;
+        filter: sepia(0.2) brightness(0.9) contrast(1.2);
+        transition: opacity 0.35s ease-out;
+        opacity: 0.5;
+        will-change: opacity;
+    }
+
+
+</style>

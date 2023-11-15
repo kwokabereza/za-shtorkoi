@@ -6,9 +6,52 @@
                 <h2 class="text-center text-gray font-serif font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">Промоблок</h2>
                 <span class="border-b-2 border-lightpink ml-4 w-20 ss:w-16"></span>
             </div>
-            <div class="text-sm xs:text-base md:text-lg xl:text-xl text-justify indent-8">Блок с фото и полем для размещения текста акции. Кнопка «Оставить заявку»</div>
-        {% partial "button/in_block-4" %}
+            <div class="mx-auto grid grid-cols-2 gap-48">
+                <div class="bg-lightpink rounded-md py-8">
+                    <div class="text-center uppercase text-xl font-bold mx-auto mt-6 mb-10">
+                        <p>Пожалуйста, оставьте свои данные, мы Вам перезвоним</p>
+                    </div>
+                    <div class="modal_form px-8">
+                        <form data-request="{{ genericForm }}::onFormSubmit" class="modalForm">
+
+                            {{ form_token() }}
+
+                            <div id="{{ genericForm }}_forms_flash"></div>
+
+                            <div class="form_cont">
+                                <input class="w-full border border-black h-14 pl-8 my-1.5 mx-auto bg-transparent" type="text" name="name" placeholder="Ваше имя">
+                            </div>
+                            <div class="form_cont">
+                                <input class="w-full border border-black h-14 pl-8 my-1.5 mx-auto bg-transparent" type="tel" name="telphone" placeholder="Телефон">
+                            </div>
+                            <div class="form_cont">
+                                <input class="w-full border border-black h-14 pl-8 my-1.5 mx-auto bg-transparent" type="text" name="comment" placeholder="Укажите в какую комнату вы хотите заказать шторы">
+                            </div>
+                            <div class="modal_send text-center mt-8 mb-8">
+                                <p class="mb-12">Нажимая кнопку «Оставить заявку», вы даете свое согласие на <a class="underline" href="{{ 'politika-konfidencialnosti'|page }}">обработку персональных данных</a></p>
+                                <button id="simpleContactSubmitButton" class="bg-gray hover:bg-lightpink active:shadow-xl shadow-gray lg:w-auto text-sm font-bold uppercase border-2 border-gray text-lightpink hover:text-black rounded-md" type="submit">
+                                    <p class="py-3 px-4">Оставить заявку</p>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between">
+                    <div class="bg-white border-t-4 border-t-gray border border-lightpink px-8 py-8 shadow-lg rounded-md">
+                        <h4 class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-center">Больше окон – больше скидка!</h4>
+                        <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-4">При заказе штор на 2 окна – скидка 3%</p>
+                        <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-4">При заказе штор на 3 окна – скидка 7%</p>
+                        <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-4">*Скидка распространяется в заказе только на ткань!</p>
+                        <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-4">*Скидка не суммируется с остальными акциями!</p>
+                    </div>
+                    <div class="bg-white border-t-4 border-t-gray border border-lightpink px-8 py-8 shadow-lg rounded-md">
+                        <h4 class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-center">Комплексные предложения</h4>
+                        <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-4"><span class="font-bold">Комбо 1:</span> Портьеры + тюль на 2 окна = вывеска одного окна в подарок.</p>
+                        <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-4"><span class="font-bold">Комбо 2:</span> Портьеры + тюль на 2 окна = покрывало на подкладке со скидкой 30% </p>
+                        <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-4">*Скидка распространяется только на ткань!</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-{% partial "modal/modal_block-4" %}

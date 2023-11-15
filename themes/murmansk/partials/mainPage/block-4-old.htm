@@ -1,0 +1,61 @@
+<div class="section_4 pb-8 pt-8 md:pb-10 md:pt-10 lg:pb-14 lg:pt-14 xl:pb-20 xl:pt-20" id="promo">
+    <div class="container">
+        <div class="mx-auto">
+            <div class="flex items-center justify-center mb-6 md:mb-10 xl:mb-16 animate-heading">
+                <span class="block border-b-2 border-lightpink mr-4 w-20 ss:w-16"></span>
+                <h2 class="text-center text-gray font-serif font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">Промоблок</h2>
+                <span class="border-b-2 border-lightpink ml-4 w-20 ss:w-16"></span>
+            </div>
+            <div class="promo mx-auto flex justify-center items-center gap-4">
+                <div class="promo-cover p-6 bg-white border-lightpink rounded-md w-1/4">
+                    <h4 class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-center pt-6 sm:pt-8">Больше окон – больше скидка!</h4>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">При заказе штор на 2 окна – скидка 3%</p>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">При заказе штор на 3 окна – скидка 7%</p>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">*Скидка распространяется в заказе только на ткань!</p>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">*Скидка не суммируется с остальными акциями!</p>
+                </div>
+                <div class="promo-cover p-6 bg-white border-lightpink rounded-md w-1/4">
+                    <h4 class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-center pt-6 sm:pt-8">Комплексные предложения</h4>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6"><span class="font-bold">Комбо 1:</span> Портьеры + тюль на 2 окна = вывеска одного окна в подарок.</p>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6"><span class="font-bold">Комбо 2:</span> Портьеры + тюль на 2 окна = покрывало на подкладке со скидкой 30% </p>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">*Скидка распространяется только на ткань!</p>
+                </div>
+                <div class="promo-cover p-6 bg-white border-lightpink rounded-md w-1/4">
+                    <h4 class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-center pt-6 sm:pt-8">Скидки до – 15%</h4>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">В зависимости от суммы заказа - предоставляем скидки! </p>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">Больше объем - больше скидка для Вас!</p>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">*Скидка действует при заказе нескольких комплектов штор в течении одного месяца и распространяется только на ткань.</p>
+                </div>
+                <div class="promo-cover p-6 bg-white border-lightpink rounded-md w-1/4">
+                    <h4 class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl font-bold text-center pt-6 sm:pt-8">Подарок имениннику</h4>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">- скидка 10% в день рождения действует при оформлении заказа в период 7 дней до и после дня рождения.</p>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">- имениннику должно быть не менее 18 лет, наличие паспорта обязательно.</p>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">- скидки не суммируются с другими акциями и предложениями.</p>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">- скидка распространяется только на ткань.</p>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">- скидка не распространяется на услуги пошив, вывеска штор.</p>
+                    <p class="text-xs sm:text-sm sm:text-base lg:text-lg xl:text-xl text-justify pt-6">- период проведения акции с 01 декабря 2023 по 29 февраля 2024 года.</p>
+                </div>
+            </div>
+
+            {% partial "button/in_block-4" %}
+        </div>
+    </div>
+</div>
+{% partial "modal/modal_block-4" %}
+<style>
+    .promo-cover {
+
+        -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+
+        transform-origin:center;
+        transform:perspective(800px) rotateY(-25deg);
+        transition:0.5s;
+    }
+    .promo:hover .promo-cover {
+        opacity:0.3;
+    }
+    .promo .promo-cover:hover {
+        transform:perspective(800px)       rotateY(0deg);
+        opacity:1;
+    }
+</style>
