@@ -2,46 +2,76 @@
     <div class="container">
         <div class="mx-auto">
             <div class="flex items-center justify-center mb-6 md:mb-10 xl:mb-16 animate-heading">
-                <span class="block border-b-2 border-lightpink mr-4 w-20 ss:w-16"></span>
-                <h2 class="text-center text-gray font-serif font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">Мои работы</h2>
-                <span class="border-b-2 border-lightpink ml-4 w-20 ss:w-16"></span>
+                <span class="block border-b-2 border-darkbeige mr-4 w-20 ss:w-16"></span>
+                <h2 class="text-center text-darkbeige font-serif font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl mx-4">Мои работы</h2>
+                <span class="border-b-2 border-darkbeige ml-4 w-20 ss:w-16"></span>
             </div>
-            <div class="works-foto mx-auto flex justify-center items-center gap-4">
-                <img class="img-cover" src="{{ 'assets/images/banner.jpg' | theme }}" alt="">
-                <img class="img-cover" src="{{ 'assets/images/IMG_20230126_185318.jpg' | theme }}" alt="">
-                <img class="img-cover" src="{{ 'assets/images/IMG_20230331_202124.jpg' | theme }}" alt="">
-                <img class="img-cover" src="{{ 'assets/images/IMG_20221101_204709_13.jpg' | theme }}" alt="">
-                <img class="img-cover" src="{{ 'assets/images/banner.jpg' | theme }}" alt="">
-                <img class="img-cover" src="{{ 'assets/images/IMG_20230126_185318.jpg' | theme }}" alt="">
+            <div class="works-foto mx-auto grid grid-cols-6 gap-4">
+                {% partial "helpers/image"
+                src= "themes/murmansk/assets/images/my-works/work-1.jpg"
+                mobSrc= "themes/murmansk/assets/images/my-works/work-1.jpg"
+                width = 2250
+                height = 3000
+                mobWidth = 2250
+                mobHeight = 3000
+                alt = "Мои работы"
+                class= "img-cover object-cover"
+                %}
+                {% partial "helpers/image"
+                src= "themes/murmansk/assets/images/my-works/work-2.jpg"
+                mobSrc= "themes/murmansk/assets/images/my-works/work-2.jpg"
+                width = 2250
+                height = 3000
+                mobWidth = 2250
+                mobHeight = 3000
+                alt = "Мои работы"
+                class= "img-cover object-cover"
+                %}
+                {% partial "helpers/image"
+                src= "themes/murmansk/assets/images/my-works/work-3.jpg"
+                mobSrc= "themes/murmansk/assets/images/my-works/work-3.jpg"
+                width = 2250
+                height = 3000
+                mobWidth = 2250
+                mobHeight = 3000
+                alt = "Мои работы"
+                class= "img-cover object-cover"
+                %}
+                {% partial "helpers/image"
+                src= "themes/murmansk/assets/images/my-works/work-4.jpg"
+                mobSrc= "themes/murmansk/assets/images/my-works/work-4.jpg"
+                width = 2250
+                height = 3000
+                mobWidth = 2250
+                mobHeight = 3000
+                alt = "Мои работы"
+                class= "img-cover object-cover"
+                %}
+                {% partial "helpers/image"
+                src= "themes/murmansk/assets/images/my-works/work-5.jpg"
+                mobSrc= "themes/murmansk/assets/images/my-works/work-5.jpg"
+                width = 2250
+                height = 3000
+                mobWidth = 2250
+                mobHeight = 3000
+                alt = "Мои работы"
+                class= "img-cover object-cover"
+                %}
+                {% partial "helpers/image"
+                src= "themes/murmansk/assets/images/my-works/work-7.jpg"
+                mobSrc= "themes/murmansk/assets/images/my-works/work-7.jpg"
+                width = 2250
+                height = 3000
+                mobWidth = 2250
+                mobHeight = 3000
+                alt = "Мои работы"
+                class= "img-cover object-cover"
+                %}
             </div>
-            <div class="mt-16 text-end">
-                <a class="text-sm xs:text-base md:text-lg xl:text-xl underline-free relative" href="https://vk.com/za_shtorkoi51" target="_blank" title="Смотреть больше">Смотреть больше</a>
+            <div class="mt-28 text-end">
+                <a class="text-sm xs:text-base md:text-lg xl:text-xl underline-free relative" href="https://vk.com/za_shtorkoi51" target="_blank" title="Смотреть больше">Смотреть больше работ на странице ВКонтакте</a>
             </div>
         </div>
     </div>
 </div>
-<style>
-    .img-cover {
-        width: 50%;
-        height: 100%;
-        object-fit:cover;
 
-        -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
-
-        transform-origin:center;
-        transform:perspective(800px) rotateY(25deg);
-        transition:0.5s;
-    }
-    .works-foto {
-        max-width:600px;
-        max-height:350px;
-
-    }
-    .works-foto:hover .img-cover {
-        opacity:0.3;
-    }
-    .works-foto .img-cover:hover {
-        transform:perspective(800px)       rotateY(0deg);
-        opacity:1;
-    }
-</style>

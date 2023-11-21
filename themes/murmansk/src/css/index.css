@@ -78,7 +78,92 @@
     .modal_form input::placeholder, .modal_form textarea::placeholder {
         color: #515b76;
     }
+    @media (max-width: 1280px) {
+        .section_4 .modal_form input::placeholder, .section_4 .modal_form textarea::placeholder {
+            font-size: 12px;
+        }
+    }
 
+    .banner{
+        background-size: cover;
+        background-position-x: center;
+    }
+    /* ХЕДЕР, ФУТЕР */
+    .blacker_blur {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom:0px;
+        left: 0px;
+        background: linear-gradient(180deg, rgba(14, 14, 14, 0) 65%, #000000 100%);
+        z-index: 1;
+    }
+    .underline-one:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        width: 0;
+        height: 1px; /* Высота линии */
+        background-color: white; /* Цвет подчеркивания при исчезании линии*/
+        transition: width 0.5s; /* Время эффекта */
+    }
+    .underline-one:hover:after {
+        content: "";
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 1px; /* Высота линии */
+        background-color: #F1E2BA; /* Цвет подчеркивания при появлении линии*/
+        transition: width 0.5s;  /* Время эффекта */
+    }
+    .underline-two:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        width: 0;
+        height: 1px; /* Высота линии */
+        background-color: #F1E2BA; /* Цвет подчеркивания при исчезании линии*/
+        transition: width 0.5s; /* Время эффекта */
+    }
+    .underline-two:hover:after {
+        content: "";
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 1px; /* Высота линии */
+        background-color: #F1E2BA; /* Цвет подчеркивания при появлении линии*/
+        transition: width 0.5s;  /* Время эффекта */
+    }
+    .underline-free:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        width: 0;
+        height: 1px; /* Высота линии */
+        background-color: #000000; /* Цвет подчеркивания при исчезании линии*/
+        transition: width 0.5s; /* Время эффекта */
+    }
+    .underline-free:hover:after {
+        content: "";
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 1px; /* Высота линии */
+        background-color: #000000; /* Цвет подчеркивания при появлении линии*/
+        transition: width 0.5s;  /* Время эффекта */
+    }
     /*блок1*/
 
     /*блок2*/
@@ -107,7 +192,92 @@
             transform: rotateY(360deg);
         }
     }
-
+    .card-around {
+        transition: ease all 2.3s;
+        perspective: 1200px;
+    }
+    .card-around:hover .cover {
+        transform: rotateX(0deg) rotateY(-180deg);
+    }
+    .card-around:hover .cover:before {
+        transform: translateZ(30px);
+    }
+    .card-around:hover .cover:after {
+        background-color: black;
+    }
+    .card-around:hover .cover h3 {
+        transform: translateZ(100px);
+    }
+    .card-around:hover .cover .price {
+        transform: translateZ(60px);
+    }
+    .card-around:hover .cover .text  {
+        transform: translateZ(-60px) rotatey(-180deg);
+    }
+    .cover {
+        transform-style: preserve-3d;
+        transition: ease all 2.3s;
+    }
+    .card-around .cover:before {
+        content: '';
+        position: absolute;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        z-index: 2;
+        transition: ease all 2.3s;
+        transform-style: preserve-3d;
+        transform: translateZ(0px);
+        border-radius: 6px;
+    }
+    .card-around .cover:after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 2;
+        transition: ease all 1.3s;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 6px;
+    }
+    .cover.item-1 {
+        background-image: url('../../assets/images/services/service-1.jpg');
+    }
+    .cover.item-2 {
+        background-image: url('../../assets/images/services/service-2.jpg');
+    }
+    .cover.item-3 {
+        background-image: url('../../assets/images/services/service-3.jpg');
+    }
+    .cover.item-4 {
+        background-image: url('../../assets/images/services/service-4.jpg');
+    }
+    .cover.item-5 {
+        background-image: url('../../assets/images/services/service-5.jpg');
+    }
+    .cover.item-6 {
+        background-image: url('../../assets/images/services/service-6.jpg');
+    }
+    .cover h3 {
+        transform-style: preserve-3d;
+        transition: ease all 2.3s;
+        transform: translateZ(0px);
+    }
+    .card-back {
+        transform-style: preserve-3d;
+        transition: ease all 2.3s;
+        transform: translateZ(-1px);
+    }
+    .card-around .card-back .text  {
+        transform-style: preserve-3d;
+        transition: ease transform 2.3s, ease background 0.5s;
+        transform: translateZ(-1px) rotatey(-180deg);
+    }
     /*блок3*/
 
     .scheme-1.element-animation{
@@ -171,140 +341,164 @@
         }
     }
 
-    /* увеличение фото при наведении на карточку */
-    .servicesCard:hover img{
-        transform: scale(1.2);
+        /*блок5*/
+     .img-cover {
+          -webkit-box-reflect:below 2px linear-gradient(transparent 50%, transparent, #0004);
+          transform-origin:center;
+          transform:perspective(800px) rotateY(25deg);
+          transition:0.5s;
+     }
+    .works-foto:hover .img-cover {
+        opacity:0.3;
     }
-    .servicesCard img {
-        transition: 1s;
-    }
-    .servicesCard:before {
-        display: block;
-        background-color: rgb(0, 0, 0);
-        content: "";
-        height: 100%;
-        opacity: 0;
-        position: absolute;
-        width: 100%;
-        z-index: 2;
-    }
-    .servicesCard:after {
-        color: white;
-        content: attr(alt);
-        display: block;
-        font-size: 32px;
-        opacity: 0;
-        padding: 0 3%;
-        position: absolute;
-        text-transform: uppercase;
-        top: 50%;
-        -webkit-transform-origin: 50% 0%;
-        transform-origin: 50% 0%;
-        -webkit-transform: scale(0) translateY(-50%);
-        transform: scale(0) translateY(-50%);
-        width: 100%;
-        z-index: 3;
-    }
-    .servicesCard:after {
-        -webkit-transition: all 350ms ease-in-out;
-        transition: all 350ms ease-in-out;
+    .works-foto .img-cover:hover {
+        transform:perspective(800px)       rotateY(0deg);
+        opacity:1;
     }
 
-    .servicesCard:hover:before {
-        opacity: 0.6;
+    /* блок 6 */
+    .card-1{
+        --image: url('../../assets/images/reviews/photo_1.jpg');
+        --angle: 0deg;
+        --x: -60%;
+        --y: -20%;
+    }
+    .card-2{
+        --image: url('../../assets/images/reviews/photo_2.jpg');
+        --angle: 0deg;
+        --x: -20%;
+        --y: -20%;
+    }
+    .card-3{
+        --image: url('../../assets/images/reviews/photo_3.jpg');
+        --angle: 0deg;
+        --x: 20%;
+        --y: -20%;
+    }
+    .card-4{
+        --image: url('../../assets/images/reviews/photo_4.jpg');
+        --angle: 0deg;
+        --x: 60%;
+        --y: -20%;
+    }
+    .card-5{
+        --image: url('../../assets/images/reviews/photo_5.jpg');
+        --angle: 0deg;
+        --x: -60%;
+        --y: 20%;
     }
 
-    .servicesCard:hover:after {
+    .card-6{
+        --image: url('../../assets/images/reviews/photo_6.jpg');
+        --angle: 0deg;
+        --x: -20%;
+        --y: 20%;
+    }
+    .card-7{
+        --image: url('../../assets/images/reviews/photo_7.jpg');
+        --angle: 0deg;
+        --x: 20%;
+        --y: 20%;
+    }
+    .card-8 {
+        --image: url('../../assets/images/reviews/photo_8.jpg');
+        --angle: 0deg;
+        --x: 60%;
+        --y: 20%;
+    }
+    /*.card-1{*/
+    /*    --image: url('../../assets/images/reviews/photo_1.jpg');*/
+    /*    --angle: -15deg;*/
+    /*    --x: -9%;*/
+    /*    --y: 15%;*/
+    /*}*/
+    /*.card-2{*/
+    /*    --image: url('../../assets/images/reviews/photo_2.jpg');*/
+    /*    --angle: -1deg;*/
+    /*    --x: -27%;*/
+    /*    --y: -20%;*/
+    /*}*/
+    /*.card-3{*/
+    /*    --image: url('../../assets/images/reviews/photo_3.jpg');*/
+    /*    --angle: -4deg;*/
+    /*    --x: -39%;*/
+    /*    --y: 5%;*/
+    /*}*/
+    /*.card-4{*/
+    /*    --image: url('../../assets/images/reviews/photo_4.jpg');*/
+    /*    --angle: 7deg;*/
+    /*    --x: -3%;*/
+    /*    --y: -7%;*/
+    /*}*/
+    /*.card-5{*/
+    /*    --image: url('../../assets/images/reviews/photo_5.jpg');*/
+    /*    --angle: -1deg;*/
+    /*    --x: 25%;*/
+    /*    --y: 7%;*/
+    /*}*/
+
+    /*.card-6{*/
+    /*    --image: url('../../assets/images/reviews/photo_6.jpg');*/
+    /*    --angle: -8deg;*/
+    /*    --x: 20%;*/
+    /*    --y: -19%;*/
+    /*}*/
+    /*.card-7{*/
+    /*    --image: url('../../assets/images/reviews/photo_7.jpg');*/
+    /*    --angle: 13deg;*/
+    /*    --x: 45%;*/
+    /*    --y: 16%;*/
+    /*}*/
+    /*.card-8 {*/
+    /*    --image: url('../../assets/images/reviews/photo_8.jpg');*/
+    /*    --angle: 0deg;*/
+    /*    --x: 43%;*/
+    /*    --y: -13%;*/
+    /*}*/
+       /* блок 6 */
+
+    .card-container {
+        width: 75vmin;
+        height: 90vmin;
+    }
+    .card {
+        box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.35);
+        transition: transform 0.35s ease-out;
+        transform: translate(var(--x), var(--y)) scale(0.35) rotate(var(--angle));
+        will-change: transform;
+    }
+    .card:hover {
+        transform: scale(1) rotate(0deg);
+        z-index: 1;
+    }
+    /*.card.active {*/
+    /*    transform: scale(1) rotate(0deg);*/
+    /*    z-index: 1;*/
+    /*}*/
+    .card:hover:before {
         opacity: 1;
-        -webkit-transform: scale(1) translateY(-50%);
-        transform: scale(1) translateY(-50%);
     }
-
-    /*блок5*/
-
-    @media (max-width: 1280px) {
-        .servicesCard:after {
-            font-size: 24px;
-        }
-    }
-    @media (max-width: 768px) {
-        .servicesCard:after {
-            font-size: 20px;
-        }
-    }
-    /* ХЕДЕР, ФУТЕР */
-    .underline-one:after {
+    .card:before {
         content: "";
         display: block;
-        position: absolute;
-        right: 0;
-        bottom: -3px;
-        width: 0;
-        height: 1px; /* Высота линии */
-        background-color: white; /* Цвет подчеркивания при исчезании линии*/
-        transition: width 0.5s; /* Время эффекта */
-    }
-    .underline-one:hover:after {
-        content: "";
-        width: 100%;
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: -3px;
-        height: 1px; /* Высота линии */
-        background-color: #ebcdcf; /* Цвет подчеркивания при появлении линии*/
-        transition: width 0.5s;  /* Время эффекта */
-    }
-    .underline-two:after {
-        content: "";
-        display: block;
-        position: absolute;
-        right: 0;
-        bottom: -3px;
-        width: 0;
-        height: 1px; /* Высота линии */
-        background-color: #515b76; /* Цвет подчеркивания при исчезании линии*/
-        transition: width 0.5s; /* Время эффекта */
-    }
-    .underline-two:hover:after {
-        content: "";
-        width: 100%;
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: -3px;
-        height: 1px; /* Высота линии */
-        background-color: #515b76; /* Цвет подчеркивания при появлении линии*/
-        transition: width 0.5s;  /* Время эффекта */
-    }
-    .underline-free:after {
-        content: "";
-        display: block;
-        position: absolute;
-        right: 0;
-        bottom: -3px;
-        width: 0;
-        height: 1px; /* Высота линии */
-        background-color: #515b76; /* Цвет подчеркивания при исчезании линии*/
-        transition: width 0.5s; /* Время эффекта */
-    }
-    .underline-free:hover:after {
-        content: "";
-        width: 100%;
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: -3px;
-        height: 1px; /* Высота линии */
-        background-color: #515b76; /* Цвет подчеркивания при появлении линии*/
-        transition: width 0.5s;  /* Время эффекта */
+        width: 90%;
+        height: 80%;
+        margin: 5%;
+        background: var(--image) no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 5px rgba(34, 34, 34, 0.35);
+        border-radius: 2px;
+        filter: sepia(0.2) brightness(0.9) contrast(1.2);
+        transition: opacity 0.35s ease-out;
+        opacity: 0.5;
+        will-change: opacity;
     }
 }
 html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: linear-gradient(to bottom, #ffffff, #ebcdcf);
+    background-image: linear-gradient(to bottom, #ffffff, #FDFAF4);
 }
 
 

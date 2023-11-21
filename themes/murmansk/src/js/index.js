@@ -139,3 +139,29 @@ const swiper = new Swiper('.services-slider',{
     autoplayDisableOnInteraction: false,
     loop: true
 });
+
+
+//
+// // Находим все карточки
+// const cards = document.querySelectorAll('.card');
+//
+// // Перебираем каждую карточку
+// cards.forEach(card => {
+//     // Добавляем обработчик события клика
+//     card.addEventListener('click', () => {
+//         // Проверяем, есть ли у карточки класс "active"
+//         const isActive = card.classList.contains('active');
+//
+//         // Если класс "active" есть, удаляем его и возвращаем карточке исходный размер и положение
+//         if (isActive) {
+//             card.style.transform = "translate(var(--x), var(--y)) scale(0.35) rotate(var(--angle))";
+//         }
+//         // Если класс "active" отсутствует, добавляем его и увеличиваем карточку
+//         else {
+//             card.style.transform = "scale(1) rotate(0deg)";
+//         }
+//
+//         // Добавляем класс "active" к карточке
+//         card.classList.toggle('active');
+//     });
+// });
