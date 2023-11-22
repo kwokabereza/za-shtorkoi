@@ -3,8 +3,6 @@
 @import './common.css';
 @import './header.css';
 @import './fonts.css';
-@import './typeSitePage.css';
-@import './OfferSitePage.css';
 
 @layer base {
     /*базовые стили*/
@@ -83,17 +81,17 @@
     }
     /*общие классы*/
 
-    .smallContainer {
-        @apply max-w-[1140px] w-[90%] m-auto;
-    }
-    @media (max-width: 480px){
-        .container {
-            @apply w-[90%];
-        }
-        .smallContainer {
-            @apply w-[90%];
-        }
-    }
+    /*.smallContainer {*/
+    /*    @apply max-w-[1140px] w-[90%] m-auto;*/
+    /*}*/
+    /*@media (max-width: 480px){*/
+    /*    .container {*/
+    /*        @apply w-[90%];*/
+    /*    }*/
+    /*    .smallContainer {*/
+    /*        @apply w-[90%];*/
+    /*    }*/
+    /*}*/
     /*доп. стили для меню*/
     .menuBtn {
     @apply [font-family:Roboto-Medium,arial,sans-serif] text-xl text-[white] no-underline mx-3 my-1.5 px-0 py-0.5;

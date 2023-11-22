@@ -1,31 +1,31 @@
 <div id="modal-application" class="modal modal-application fixed w-full h-full top-0 left-0 z-10 opacity-0 invisible overflow-x-hidden overflow-y-auto">
     <a class="modal_area absolute w-full h-full top-0 left-0"></a>
     <div class="modal_body min-h-full flex justify-center items-center z-10 px-2.5 py-8">
-        <div class="modal_content bg-lightpink max-w-xl relative opacity-0 hidden rounded-md">
-            <a class="modal_close absolute text-gray text-2xl right-4 top-3 cursor-pointer">x</a>
-            <div class="text-center text-gray uppercase text-xl font-bold mx-auto mt-10 mb-6">
+        <div class="modal_content bg-lightbeige max-w-xl relative opacity-0 hidden rounded-md">
+            <a class="modal_close absolute text-2xl right-4 top-3 cursor-pointer">x</a>
+            <div class="text-center uppercase text-xl font-bold mx-auto mt-10 mb-6">
                 <p>Пожалуйста, оставьте свои данные, мы Вам перезвоним</p>
             </div>
 
             <div class="modal_form px-8">
-                <form data-request="{{ genericForm }}::onFormSubmit" class="modalForm">
+                <form data-request="{{ genericForm3 }}::onFormSubmit" class="modalForm">
 
                     {{ form_token() }}
 
-                    <div id="{{ genericForm }}_forms_flash"></div>
+                    <div id="{{ genericForm3 }}_forms_flash"></div>
 
                     <div class="form_cont">
-                        <input class="w-full border border-gray text-gray h-14 pl-8 my-1.5 mx-auto bg-transparent" type="text" name="name" placeholder="Ваше имя">
+                        <input class="w-full h-14 pl-8 my-1.5 mx-auto bg-transparent" type="text" name="name" placeholder="Ваше имя">
                     </div>
                     <div class="form_cont">
-                        <input class="w-full border border-gray text-gray h-14 pl-8 my-1.5 mx-auto bg-transparent" type="tel" name="telphone" placeholder="Телефон">
+                        <input class="w-full h-14 pl-8 my-1.5 mx-auto bg-transparent" type="tel" name="telphone" placeholder="Телефон">
                     </div>
                     <div class="form_cont">
-                        <input class="w-full border border-gray text-gray h-14 pl-8 my-1.5 mx-auto bg-transparent" type="text" name="comment" placeholder="Укажите в какую комнату вы хотите заказать шторы">
+                        <input class="w-full h-14 pl-8 my-1.5 mx-auto bg-transparent" type="text" name="comment" placeholder="В какую комнату вы хотите заказать шторы?">
                     </div>
                     <div class="modal_send text-center mt-8 mb-16">
-                        <p class="text-gray mb-12">Нажимая кнопку «Оставить заявку», вы даете свое согласие на <a class="underline" href="{{ 'politika-konfidencialnosti'|page }}">обработку персональных данных</a></p>
-                        <button id="simpleContactSubmitButton" class="bg-gray hover:bg-lightpink active:shadow-xl shadow-gray lg:w-auto text-sm font-bold uppercase border-2 border-gray text-lightpink hover:text-gray rounded-md" type="submit">
+                        <p class="mb-12">Нажимая кнопку «Оставить заявку», вы даете свое согласие на <a class="underline" href="{{ 'politika-konfidencialnosti'|page }}">обработку персональных данных</a></p>
+                        <button id="simpleContactSubmitButton" class="bg-beige hover:bg-brown-gold text-black hover:text-white border border-brown-gold active:shadow-xl shadow-gray lg:w-auto font-bold uppercase rounded-md" type="submit">
                             <p class="py-3 px-4">Оставить заявку</p>
                         </button>
                     </div>

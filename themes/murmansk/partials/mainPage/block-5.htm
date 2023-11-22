@@ -2,11 +2,11 @@
     <div class="container">
         <div class="mx-auto">
             <div class="flex items-center justify-center mb-6 md:mb-10 xl:mb-16 animate-heading">
-                <span class="block border-b-2 border-darkbeige mr-4 w-20 ss:w-16"></span>
-                <h2 class="text-center text-darkbeige font-serif font-bold text-3xl sm:text-4xl lg:text-5xl xl:text-6xl mx-4">Мои работы</h2>
-                <span class="border-b-2 border-darkbeige ml-4 w-20 ss:w-16"></span>
+                <span class="block border-b-2 border-darkbeige w-12 sm:w-16 xl:w-20"></span>
+                <h2 class="text-center text-darkbeige font-serif font-bold text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl mx-2 sm:mx-4 w-28 xxs:w-auto">Мои работы</h2>
+                <span class="border-b-2 border-darkbeige w-12 sm:w-16 xl:w-20"></span>
             </div>
-            <div class="works-foto mx-auto grid grid-cols-6 gap-4">
+            <div class="works-foto mx-auto grid grid-cols-2 xs:grid-cols-3 xl:grid-cols-6 gap-4 mt-6 sm:mt-8 md:mt-12 xl:mt-0">
                 {% partial "helpers/image"
                 src= "themes/murmansk/assets/images/my-works/work-1.jpg"
                 mobSrc= "themes/murmansk/assets/images/my-works/work-1.jpg"
@@ -35,7 +35,7 @@
                 mobWidth = 2250
                 mobHeight = 3000
                 alt = "Мои работы"
-                class= "img-cover object-cover"
+                class= "img-cover object-cover mt-12 xs:mt-0"
                 %}
                 {% partial "helpers/image"
                 src= "themes/murmansk/assets/images/my-works/work-4.jpg"
@@ -45,7 +45,7 @@
                 mobWidth = 2250
                 mobHeight = 3000
                 alt = "Мои работы"
-                class= "img-cover object-cover"
+                class= "img-cover object-cover mt-12 sm:mt-16 md:mt-24 xl:mt-0"
                 %}
                 {% partial "helpers/image"
                 src= "themes/murmansk/assets/images/my-works/work-5.jpg"
@@ -55,7 +55,7 @@
                 mobWidth = 2250
                 mobHeight = 3000
                 alt = "Мои работы"
-                class= "img-cover object-cover"
+                class= "img-cover object-cover mt-12 sm:mt-16 md:mt-24 xl:mt-0"
                 %}
                 {% partial "helpers/image"
                 src= "themes/murmansk/assets/images/my-works/work-7.jpg"
@@ -65,10 +65,10 @@
                 mobWidth = 2250
                 mobHeight = 3000
                 alt = "Мои работы"
-                class= "img-cover object-cover"
+                class= "img-cover object-cover mt-12 sm:mt-16 md:mt-24 xl:mt-0"
                 %}
             </div>
-            <div class="mt-28 text-end">
+            <div class="mt-16 md:mt-20 lg:mt-28 text-end">
                 <a class="text-sm xs:text-base md:text-lg xl:text-xl underline-free relative" href="https://vk.com/za_shtorkoi51" target="_blank" title="Смотреть больше">Смотреть больше работ на странице ВКонтакте</a>
             </div>
         </div>

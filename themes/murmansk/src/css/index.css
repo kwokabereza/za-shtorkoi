@@ -285,7 +285,7 @@
         transform: translatey(20%);
     }
     .scheme-1.element-animation.element-show{
-        animation: opacity 1s forwards;
+        animation: opacity 2s forwards;
     }
     @keyframes opacity {
         from {
@@ -301,7 +301,7 @@
         transform: translateY(-20%);
     }
     .scheme-2.element-animation.element-show{
-        animation: opacity 1s forwards;
+        animation: opacity 2s forwards;
         animation-delay: 0.3s;
     }
     .scheme-3.element-animation{
@@ -309,7 +309,7 @@
         transform: translateY(20%);
     }
     .scheme-3.element-animation.element-show{
-        animation: opacity 1s forwards;
+        animation: opacity 2s forwards;
         animation-delay: 0.6s;
     }
     .scheme-4.element-animation{
@@ -317,7 +317,7 @@
         transform: translateY(-20%);
     }
     .scheme-4.element-animation.element-show{
-        animation: opacity 1s forwards;
+        animation: opacity 2s forwards;
         animation-delay: 0.9s;
     }
     .scheme-5.element-animation{
@@ -325,19 +325,37 @@
         transform: translateY(20%);
     }
     .scheme-5.element-animation.element-show{
-        animation: opacity 1s forwards;
+        animation: opacity 2s forwards;
         animation-delay: 1.2s;
     }
-    @media (max-width: 1280px) {
-        .scheme-5.element-animation{
+    /*@media (max-width: 1280px) {*/
+    /*    .scheme-5.element-animation{*/
+    /*        opacity: 0;*/
+    /*        transform: translateY(-20%);*/
+    /*    }*/
+    /*}*/
+    @media (max-width: 768px) {
+        .scheme-1.element-animation, .scheme-3.element-animation, .scheme-5.element-animation{
             opacity: 0;
-            transform: translateY(-20%);
+            transform: translateX(-10%);
+        }
+        .scheme-2.element-animation, .scheme-4.element-animation{
+            opacity: 0;
+            transform: translateX(10%);
         }
     }
-    @media (max-width: 1024px) {
-        .scheme-1.element-animation, .scheme-2.element-animation, .scheme-3.element-animation, .scheme-4.element-animation{
+    .line.element-animation{
+        opacity: 0;
+    }
+    .line.element-animation.element-show{
+        animation: opac 4s forwards;
+    }
+    @keyframes opac {
+        from {
             opacity: 0;
-            transform: translateY(-20%);
+        }
+        to {
+            opacity: 1;
         }
     }
 
@@ -352,110 +370,109 @@
         opacity:0.3;
     }
     .works-foto .img-cover:hover {
-        transform:perspective(800px)       rotateY(0deg);
+        transform:perspective(800px) rotateY(0deg);
         opacity:1;
     }
 
     /* блок 6 */
-    .card-1{
-        --image: url('../../assets/images/reviews/photo_1.jpg');
-        --angle: 0deg;
-        --x: -60%;
-        --y: -20%;
-    }
-    .card-2{
-        --image: url('../../assets/images/reviews/photo_2.jpg');
-        --angle: 0deg;
-        --x: -20%;
-        --y: -20%;
-    }
-    .card-3{
-        --image: url('../../assets/images/reviews/photo_3.jpg');
-        --angle: 0deg;
-        --x: 20%;
-        --y: -20%;
-    }
-    .card-4{
-        --image: url('../../assets/images/reviews/photo_4.jpg');
-        --angle: 0deg;
-        --x: 60%;
-        --y: -20%;
-    }
-    .card-5{
-        --image: url('../../assets/images/reviews/photo_5.jpg');
-        --angle: 0deg;
-        --x: -60%;
-        --y: 20%;
-    }
-
-    .card-6{
-        --image: url('../../assets/images/reviews/photo_6.jpg');
-        --angle: 0deg;
-        --x: -20%;
-        --y: 20%;
-    }
-    .card-7{
-        --image: url('../../assets/images/reviews/photo_7.jpg');
-        --angle: 0deg;
-        --x: 20%;
-        --y: 20%;
-    }
-    .card-8 {
-        --image: url('../../assets/images/reviews/photo_8.jpg');
-        --angle: 0deg;
-        --x: 60%;
-        --y: 20%;
-    }
     /*.card-1{*/
     /*    --image: url('../../assets/images/reviews/photo_1.jpg');*/
-    /*    --angle: -15deg;*/
-    /*    --x: -9%;*/
-    /*    --y: 15%;*/
+    /*    --angle: 0deg;*/
+    /*    --x: -60%;*/
+    /*    --y: -20%;*/
     /*}*/
     /*.card-2{*/
     /*    --image: url('../../assets/images/reviews/photo_2.jpg');*/
-    /*    --angle: -1deg;*/
-    /*    --x: -27%;*/
+    /*    --angle: 0deg;*/
+    /*    --x: -20%;*/
     /*    --y: -20%;*/
     /*}*/
     /*.card-3{*/
     /*    --image: url('../../assets/images/reviews/photo_3.jpg');*/
-    /*    --angle: -4deg;*/
-    /*    --x: -39%;*/
-    /*    --y: 5%;*/
+    /*    --angle: 0deg;*/
+    /*    --x: 20%;*/
+    /*    --y: -20%;*/
     /*}*/
     /*.card-4{*/
     /*    --image: url('../../assets/images/reviews/photo_4.jpg');*/
-    /*    --angle: 7deg;*/
-    /*    --x: -3%;*/
-    /*    --y: -7%;*/
+    /*    --angle: 0deg;*/
+    /*    --x: 60%;*/
+    /*    --y: -20%;*/
     /*}*/
     /*.card-5{*/
     /*    --image: url('../../assets/images/reviews/photo_5.jpg');*/
-    /*    --angle: -1deg;*/
-    /*    --x: 25%;*/
-    /*    --y: 7%;*/
+    /*    --angle: 0deg;*/
+    /*    --x: -60%;*/
+    /*    --y: 20%;*/
     /*}*/
 
     /*.card-6{*/
     /*    --image: url('../../assets/images/reviews/photo_6.jpg');*/
-    /*    --angle: -8deg;*/
-    /*    --x: 20%;*/
-    /*    --y: -19%;*/
+    /*    --angle: 0deg;*/
+    /*    --x: -20%;*/
+    /*    --y: 20%;*/
     /*}*/
     /*.card-7{*/
     /*    --image: url('../../assets/images/reviews/photo_7.jpg');*/
-    /*    --angle: 13deg;*/
-    /*    --x: 45%;*/
-    /*    --y: 16%;*/
+    /*    --angle: 0deg;*/
+    /*    --x: 20%;*/
+    /*    --y: 20%;*/
     /*}*/
     /*.card-8 {*/
     /*    --image: url('../../assets/images/reviews/photo_8.jpg');*/
     /*    --angle: 0deg;*/
-    /*    --x: 43%;*/
-    /*    --y: -13%;*/
+    /*    --x: 60%;*/
+    /*    --y: 20%;*/
     /*}*/
-       /* блок 6 */
+    .card-1{
+        --image: url('../../assets/images/reviews/photo_1.jpg');
+        --angle: -15deg;
+        --x: -9%;
+        --y: 15%;
+    }
+    .card-2{
+        --image: url('../../assets/images/reviews/photo_2.jpg');
+        --angle: -1deg;
+        --x: -27%;
+        --y: -20%;
+    }
+    .card-3{
+        --image: url('../../assets/images/reviews/photo_3.jpg');
+        --angle: -4deg;
+        --x: -39%;
+        --y: 5%;
+    }
+    .card-4{
+        --image: url('../../assets/images/reviews/photo_4.jpg');
+        --angle: 7deg;
+        --x: -3%;
+        --y: -7%;
+    }
+    .card-5{
+        --image: url('../../assets/images/reviews/photo_5.jpg');
+        --angle: -1deg;
+        --x: 25%;
+        --y: 7%;
+    }
+
+    .card-6{
+        --image: url('../../assets/images/reviews/photo_6.jpg');
+        --angle: -8deg;
+        --x: 20%;
+        --y: -19%;
+    }
+    .card-7{
+        --image: url('../../assets/images/reviews/photo_7.jpg');
+        --angle: 13deg;
+        --x: 45%;
+        --y: 16%;
+    }
+    .card-8 {
+        --image: url('../../assets/images/reviews/photo_8.jpg');
+        --angle: 0deg;
+        --x: 43%;
+        --y: -13%;
+    }
 
     .card-container {
         width: 75vmin;
@@ -467,11 +484,11 @@
         transform: translate(var(--x), var(--y)) scale(0.35) rotate(var(--angle));
         will-change: transform;
     }
-    .card:hover {
+    .card.active {
         transform: scale(1) rotate(0deg);
         z-index: 1;
     }
-    /*.card.active {*/
+    /*.card:hover {*/
     /*    transform: scale(1) rotate(0deg);*/
     /*    z-index: 1;*/
     /*}*/
@@ -504,9 +521,9 @@ body{
 
 /*алерты и прочее*/
 .alert {
-    background-color: #0505A9;
+    background-color: #F1E2BA;
     text-align: center;
-    color: #FFFFFF;
+    color: #000000;
     padding: 20px 0;
     display: flex;
     align-items: center;

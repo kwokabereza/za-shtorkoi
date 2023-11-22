@@ -56,7 +56,7 @@
     "src": "assets/images/services/service-6.jpg"
   },
   "src/css/global.css": {
-    "file": "assets/global-9cd38488.css",
+    "file": "assets/global-2ee493db.css",
     "isEntry": true,
     "src": "src/css/global.css"
   },
@@ -68,12 +68,12 @@
     "css": [
       "assets/global-f47d27a2.css"
     ],
-    "file": "assets/main-78fa7651.js",
+    "file": "assets/main-1b1a2cae.js",
     "isEntry": true,
     "src": "src/js/global.js"
   },
   "src/js/index.js": {
-    "file": "assets/index-a1ed353e.js",
+    "file": "assets/index-28f560de.js",
     "isEntry": true,
     "src": "src/js/index.js"
   }
