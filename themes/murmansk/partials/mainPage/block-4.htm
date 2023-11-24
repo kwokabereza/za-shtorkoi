@@ -1,62 +1,78 @@
-<div class="section_4 bg-lightbeige pb-8 pt-8 md:pb-10 md:pt-10 lg:pb-14 lg:pt-14 xl:pb-20 xl:pt-20" id="promo">
+[builderList]
+modelClass = "Annb\ZaShtorkoi\Models\Promo"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+<div class="flex items-center justify-center pt-4 md:pt-6 lg:pt-8 xl:pt-10 mb-8 md:mb-12 lg:mb-16 xl:mb-20 animate-heading">
+    <span class="block border-b-2 border-darkbeige w-12 sm:w-16 xl:w-20"></span>
+    <h2 class="text-center text-darkbeige font-serif font-bold text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl mx-2 sm:mx-4">Акции</h2>
+    <span class="border-b-2 border-darkbeige w-12 sm:w-16 xl:w-20"></span>
+</div>
+<div class="section_4 bg-lightbeige py-4 md:py-6 lg:py-8 xl:py-10" id="promo">
     <div class="container">
         <div class="mx-auto">
-            <div class="flex items-center justify-center mb-6 md:mb-10 xl:mb-16 animate-heading">
-                <span class="block border-b-2 border-darkbeige w-12 sm:w-16 xl:w-20"></span>
-                <h2 class="text-center text-darkbeige font-serif font-bold text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl mx-2 sm:mx-4">Акции</h2>
-                <span class="border-b-2 border-darkbeige w-12 sm:w-16 xl:w-20"></span>
-            </div>
+         {% for record in records %}
+            {% if record.id == 1 %}
             <div class="mx-auto border border-brown-gold rounded-md grid lg:grid-cols-2 gap-4 2xl:gap-8 mb-6">
-                <div class="px-8 pt-8 lg:p-8">
+                <div class="px-4 pt-4 xs:px-6 xs:pt-6 md:px-8 md:pt-8 lg:p-8">
                     <div class="mx-auto h-full">
+                        {% set img = "/storage/app/media/" ~ record.mediafinder %}
                         {% partial "helpers/image"
-                        src= "themes/murmansk/assets/images/promo-1.jpg"
-                        mobSrc= "themes/murmansk/assets/images/promo-1.jpg"
+                        src= img
+                        mobSrc= img
                         width = 3000
                         height = 3000
                         mobWidth = 3000
                         mobHeight = 3000
                         alt = "Больше окон – больше скидка!"
-                        class= "rounded-md object-cover object-top h-96"
+                        class= "rounded-md object-cover object-top h-68 xxs:h-80 md:h-96"
                         %}
                     </div>
                 </div>
-                <div class="px-8 pb-8 lg:p-8">
-                    <h3 class="mb-6 font-serif text-3xl lg:text-4xl xl:text-5xl leading-tight font-bold tracking-tight">Больше окон – больше скидка!</h3>
-                    <div class="mb-2 text-lg md:text-xl font-medium">При заказе штор на 2 окна – скидка 3%.</div>
-                    <div class="mb-6 text-lg md:text-xl font-medium">При заказе штор на 3 окна – скидка 7%</div>
-                    <div class="mb-2 text-base md:text-lg font-medium">*Скидка распространяется в заказе только на ткань!</div>
-                    <div class="text-base md:text-lg font-medium">*Скидка не суммируется с остальными акциями!</div>
+                <div class="px-4 pb-4 xs:px-6 xs:pb-6 md:px-8 md:pb-8 lg:p-8">
+                    <h3 class="mb-6 font-serif text-3xl xs:text-4xl xl:text-5xl leading-tight font-bold tracking-tight">{{record.title|raw}}</h3>
+                    <div class="mb-6 text-base xs:text-lg md:text-xl font-medium promo-text">{{record.description|raw}}</div>
+                    <div class="text-sm xs:text-base md:text-lg font-medium">{{record.content|raw}}</div>
                     <div class="flex flex-wrap">
                     {% partial "button/in_block-4" %}
-                </div>
-            </div>
-            </div>
-            <div class="flex flex-wrap flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-4 2xl:gap-8 border border-brown-gold rounded-md">
-                <div class="w-full px-8 pb-8 lg:p-8">
-                    <h3 class="mb-6 font-serif text-3xl lg:text-4xl xl:text-5xl leading-tight font-bold tracking-tight">Комплексные предложения:</h3>
-                    <div class="mb-2 text-lg md:text-xl font-medium"><span class="underline">Комбо 1:</span> Портьеры + тюль на 2 окна = вывеска одного окна в подарок.</div>
-                    <div class="mb-6 text-lg md:text-xl font-medium"><span class="underline">Комбо 2:</span> Портьеры + тюль на 2 окна = покрывало на подкладке со скидкой 30%.</div>
-                    <div class="text-base md:text-lg font-medium">*Скидка распространяется в заказе только на ткань!</div>
-                    <div class="flex flex-wrap">
-                        {% partial "button/in_block-4" %}
                     </div>
                 </div>
-                <div class="w-full p-8">
+            </div>
+            {% endif %}
+            {% if record.id == 2 %}
+            <div class="flex flex-wrap flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-4 2xl:gap-8 border border-brown-gold rounded-md">
+                <div class="w-full px-4 pb-4 xs:px-6 xs:pb-6 md:px-8 md:pb-8 lg:p-8">
+                    <h3 class="mb-6 font-serif text-3xl xs:text-4xl xl:text-5xl leading-tight font-bold tracking-tight">{{record.title|raw}}</h3>
+                    <div class="mb-6 text-base xs:text-lg md:text-xl font-medium promo-text">{{record.description|raw}}</div>
+                    <div class="text-sm xs:text-base md:text-lg font-medium">{{record.content|raw}}</div>
+                    <div class="flex flex-wrap">
+                    {% partial "button/in_block-4" %}
+                    </div>
+                </div>
+                <div class="w-full p-4 xs:p-6 md:p-8">
                     <div class="mx-auto h-full">
+                        {% set img = "/storage/app/media/" ~ record.mediafinder %}
                         {% partial "helpers/image"
-                        src= "themes/murmansk/assets/images/promo-2.jpg"
-                        mobSrc= "themes/murmansk/assets/images/promo-2.jpg"
+                        src= img
+                        mobSrc= img
                         width = 3000
-                        height = 2000
+                        height = 3000
                         mobWidth = 3000
-                        mobHeight = 2000
+                        mobHeight = 3000
                         alt = "Комплексные предложения"
-                        class= "rounded-md object-cover object-top h-96"
+                        class= "rounded-md object-cover object-top h-68 xxs:h-80 md:h-96"
                         %}
                     </div>
                 </div>
             </div>
+            {% endif %}
+        {% endfor %}
         </div>
     </div>
 </div>

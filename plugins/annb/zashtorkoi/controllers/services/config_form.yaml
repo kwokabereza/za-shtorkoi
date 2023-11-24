@@ -1,0 +1,10 @@
+name: Services
+form: $/annb/zashtorkoi/models/service/fields.yaml
+modelClass: Annb\ZaShtorkoi\Models\Service
+defaultRedirect: annb/zashtorkoi/services
+create:
+    redirect: 'annb/zashtorkoi/services/update/:id'
+    redirectClose: annb/zashtorkoi/services
+update:
+    redirect: annb/zashtorkoi/services
+    redirectClose: annb/zashtorkoi/services

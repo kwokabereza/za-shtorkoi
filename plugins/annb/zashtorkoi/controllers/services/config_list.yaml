@@ -1,0 +1,12 @@
+list: $/annb/zashtorkoi/models/service/columns.yaml
+modelClass: Annb\ZaShtorkoi\Models\Service
+title: Services
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'annb/zashtorkoi/services/update/:id'

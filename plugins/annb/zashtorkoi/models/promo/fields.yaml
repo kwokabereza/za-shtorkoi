@@ -1,0 +1,23 @@
+fields:
+    title:
+        label: 'Название акции'
+        span: auto
+        type: text
+    mediafinder:
+        label: 'Фотография акции'
+        mode: image
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: mediafinder
+    description:
+        label: 'Описание акции'
+        size: large
+        span: auto
+        type: richeditor
+    content:
+        label: 'Уточнения со *'
+        size: large
+        span: auto
+        type: richeditor

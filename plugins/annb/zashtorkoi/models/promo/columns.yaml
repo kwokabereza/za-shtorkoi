@@ -1,0 +1,21 @@
+columns:
+    id:
+        label: 'Номер акции'
+        type: number
+        searchable: true
+        sortable: true
+    title:
+        label: 'Название акции'
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: 'Описание акции'
+        type: text
+        searchable: true
+        sortable: true
+    content:
+        label: 'Уточнения со *'
+        type: text
+        searchable: true
+        sortable: true

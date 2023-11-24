@@ -1,0 +1,11 @@
+columns:
+    id:
+        label: 'Номер фотографии'
+        type: number
+        searchable: true
+        sortable: true
+    mediafinder:
+        label: 'Имя фото'
+        type: text
+        searchable: true
+        sortable: true

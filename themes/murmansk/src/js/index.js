@@ -81,6 +81,23 @@ document.querySelectorAll('.modal_close').forEach(function(element) {
         document.querySelector('.modal-application').classList.remove('active');
     });
 });
+document.querySelectorAll('.questions').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.querySelector('.modal-questions').classList.toggle('active');
+    });
+});
+
+document.querySelectorAll('.modal_area').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.querySelector('.modal-questions').classList.remove('active');
+    });
+});
+
+document.querySelectorAll('.modal_close').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.querySelector('.modal-questions').classList.remove('active');
+    });
+});
 
 // // анимация при прокрутке до блока
 function onEntry(entry) {
@@ -105,9 +122,9 @@ function onEntryHeading(entry) {
         if (change.isIntersecting) {
             change.target.classList.add('element-show');
         }
-        else {
-            change.target.classList.remove('element-show');
-        }
+        // else {
+        //     change.target.classList.remove('element-show');
+        // }
     });
 }
 let optionsHeading = { threshold: [0.5] };
@@ -116,31 +133,6 @@ let elementsHeading = document.querySelectorAll('.animate-heading');
 for (let elmHeading of elementsHeading) {
     observerHeading.observe(elmHeading);
 }
-
-// слайдер на странице услуги
-const swiper = new Swiper('.services-slider',{
-    // navigation: {
-    //     nextEl: '.services-next',
-    //     prevEl: '.services-prev',
-    // },
-    pagination: {
-        el: '.services-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-    // scrollbar: {
-    //     el: '.services-scrollbar',
-    //     draggable: true,
-    // },
-    slidesPerView: 1,
-    watchOverflow: true,
-    // speed: 2500,
-    // autoplay: true,
-    autoplayDisableOnInteraction: false,
-    loop: true
-});
-
-
 
 // Находим все карточки
 const cards = document.querySelectorAll('.card');

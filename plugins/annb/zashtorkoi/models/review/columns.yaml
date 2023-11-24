@@ -1,0 +1,11 @@
+columns:
+    id:
+        label: 'Номер отзыва'
+        type: number
+        searchable: true
+        sortable: true
+    mediafinder:
+        label: 'Название файла'
+        type: text
+        searchable: true
+        sortable: true

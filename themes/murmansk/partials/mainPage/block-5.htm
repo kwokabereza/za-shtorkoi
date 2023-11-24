@@ -1,77 +1,108 @@
-<div class="section_5 pb-8 pt-8 md:pb-10 md:pt-10 lg:pb-14 lg:pt-14 xl:pb-20 xl:pt-20" id="my_works">
+[builderList]
+modelClass = "Annb\ZaShtorkoi\Models\Work"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+<div class="section_5 pb-4 pt-8 md:pb-6 md:pt-12 lg:pb-8 lg:pt-16 xl:pb-10 xl:pt-20" id="my_works">
     <div class="container">
         <div class="mx-auto">
-            <div class="flex items-center justify-center mb-6 md:mb-10 xl:mb-16 animate-heading">
+            <div class="flex items-center justify-center mb-8 md:mb-12 lg:mb-16 xl:mb-20 animate-heading">
                 <span class="block border-b-2 border-darkbeige w-12 sm:w-16 xl:w-20"></span>
                 <h2 class="text-center text-darkbeige font-serif font-bold text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl mx-2 sm:mx-4 w-28 xxs:w-auto">Мои работы</h2>
                 <span class="border-b-2 border-darkbeige w-12 sm:w-16 xl:w-20"></span>
             </div>
-            <div class="works-foto mx-auto grid grid-cols-2 xs:grid-cols-3 xl:grid-cols-6 gap-4 mt-6 sm:mt-8 md:mt-12 xl:mt-0">
-                {% partial "helpers/image"
-                src= "themes/murmansk/assets/images/my-works/work-1.jpg"
-                mobSrc= "themes/murmansk/assets/images/my-works/work-1.jpg"
-                width = 2250
-                height = 3000
-                mobWidth = 2250
-                mobHeight = 3000
-                alt = "Мои работы"
-                class= "img-cover object-cover"
-                %}
-                {% partial "helpers/image"
-                src= "themes/murmansk/assets/images/my-works/work-2.jpg"
-                mobSrc= "themes/murmansk/assets/images/my-works/work-2.jpg"
-                width = 2250
-                height = 3000
-                mobWidth = 2250
-                mobHeight = 3000
-                alt = "Мои работы"
-                class= "img-cover object-cover"
-                %}
-                {% partial "helpers/image"
-                src= "themes/murmansk/assets/images/my-works/work-3.jpg"
-                mobSrc= "themes/murmansk/assets/images/my-works/work-3.jpg"
-                width = 2250
-                height = 3000
-                mobWidth = 2250
-                mobHeight = 3000
-                alt = "Мои работы"
-                class= "img-cover object-cover mt-12 xs:mt-0"
-                %}
-                {% partial "helpers/image"
-                src= "themes/murmansk/assets/images/my-works/work-4.jpg"
-                mobSrc= "themes/murmansk/assets/images/my-works/work-4.jpg"
-                width = 2250
-                height = 3000
-                mobWidth = 2250
-                mobHeight = 3000
-                alt = "Мои работы"
-                class= "img-cover object-cover mt-12 sm:mt-16 md:mt-24 xl:mt-0"
-                %}
-                {% partial "helpers/image"
-                src= "themes/murmansk/assets/images/my-works/work-5.jpg"
-                mobSrc= "themes/murmansk/assets/images/my-works/work-5.jpg"
-                width = 2250
-                height = 3000
-                mobWidth = 2250
-                mobHeight = 3000
-                alt = "Мои работы"
-                class= "img-cover object-cover mt-12 sm:mt-16 md:mt-24 xl:mt-0"
-                %}
-                {% partial "helpers/image"
-                src= "themes/murmansk/assets/images/my-works/work-7.jpg"
-                mobSrc= "themes/murmansk/assets/images/my-works/work-7.jpg"
-                width = 2250
-                height = 3000
-                mobWidth = 2250
-                mobHeight = 3000
-                alt = "Мои работы"
-                class= "img-cover object-cover mt-12 sm:mt-16 md:mt-24 xl:mt-0"
-                %}
+            <div class="works-foto mx-auto grid grid-cols-2 xs:grid-cols-3 xl:grid-cols-6 gap-4 mt-6 sm:mt-8 md:mt-14 lg:mt-18 xl:mt-0">
+            {% for record in records %}
+
+                {% if record.id == 1 %}
+                    {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                    {% partial "helpers/image"
+                    src= img
+                    mobSrc= img
+                    width = 2250
+                    height = 3000
+                    mobWidth = 2250
+                    mobHeight = 3000
+                    alt = "Мои работы"
+                    class= "img-cover object-cover"
+                    %}
+                {% endif %}
+                {% if record.id == 2 %}
+                    {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                    {% partial "helpers/image"
+                    src= img
+                    mobSrc= img
+                    width = 2250
+                    height = 3000
+                    mobWidth = 2250
+                    mobHeight = 3000
+                    alt = "Мои работы"
+                    class= "img-cover object-cover"
+                    %}
+                {% endif %}
+                {% if record.id == 3 %}
+                    {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                    {% partial "helpers/image"
+                    src= img
+                    mobSrc= img
+                    width = 2250
+                    height = 3000
+                    mobWidth = 2250
+                    mobHeight = 3000
+                    alt = "Мои работы"
+                    class= "img-cover object-cover mt-12 xs:mt-0"
+                    %}
+                {% endif %}
+                {% if record.id == 4 %}
+                    {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                    {% partial "helpers/image"
+                    src= img
+                    mobSrc= img
+                    width = 2250
+                    height = 3000
+                    mobWidth = 2250
+                    mobHeight = 3000
+                    alt = "Мои работы"
+                    class= "img-cover object-cover mt-12 sm:mt-16 md:mt-24 lg:mt-32 xl:mt-0"
+                    %}
+                {% endif %}
+                {% if record.id == 5 %}
+                    {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                    {% partial "helpers/image"
+                    src= img
+                    mobSrc= img
+                    width = 2250
+                    height = 3000
+                    mobWidth = 2250
+                    mobHeight = 3000
+                    alt = "Мои работы"
+                    class= "img-cover object-cover mt-12 sm:mt-16 md:mt-24 lg:mt-32 xl:mt-0"
+                    %}
+                {% endif %}
+                {% if record.id == 6 %}
+                    {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                    {% partial "helpers/image"
+                    src= img
+                    mobSrc= img
+                    width = 2250
+                    height = 3000
+                    mobWidth = 2250
+                    mobHeight = 3000
+                    alt = "Мои работы"
+                    class= "img-cover object-cover mt-12 sm:mt-16 md:mt-24 lg:mt-32 xl:mt-0"
+                    %}
+                {% endif %}                
+            {% endfor %}
             </div>
-            <div class="mt-16 md:mt-20 lg:mt-28 text-end">
+            <div class="mt-16 md:mt-24 lg:mt-32 xl:mt-20 2xl:mt-24 3xl:mt-28 text-end">
                 <a class="text-sm xs:text-base md:text-lg xl:text-xl underline-free relative" href="https://vk.com/za_shtorkoi51" target="_blank" title="Смотреть больше">Смотреть больше работ на странице ВКонтакте</a>
             </div>
         </div>
     </div>
 </div>
-

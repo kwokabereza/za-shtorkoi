@@ -1,0 +1,12 @@
+list: $/annb/zashtorkoi/models/promo/columns.yaml
+modelClass: Annb\ZaShtorkoi\Models\Promo
+title: Promos
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'annb/zashtorkoi/promos/update/:id'

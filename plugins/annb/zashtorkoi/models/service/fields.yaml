@@ -1,0 +1,18 @@
+fields:
+    title:
+        label: 'Название услуги'
+        span: auto
+        type: text
+    mediafinder:
+        label: 'Фотография услуги'
+        mode: image
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: mediafinder
+    description:
+        label: 'Описание услуги'
+        size: large
+        span: auto
+        type: richeditor

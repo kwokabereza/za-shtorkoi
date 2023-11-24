@@ -1,0 +1,16 @@
+columns:
+    id:
+        label: 'Номер услуги'
+        type: number
+        searchable: true
+        sortable: true
+    title:
+        label: 'Название услуги'
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: 'Описание услуги'
+        type: text
+        searchable: true
+        sortable: true

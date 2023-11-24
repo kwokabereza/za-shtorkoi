@@ -1,0 +1,9 @@
+fields:
+    mediafinder:
+        label: 'Фотография отзыва'
+        mode: image
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: mediafinder

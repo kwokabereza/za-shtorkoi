@@ -57,12 +57,12 @@
         /*backdrop-filter: blur(4px);*/
         transition: all 0.8s ease 0s;
     }
-    .modal-consultation.active, .modal-measurement.active, .modal-application.active{
+    .modal-consultation.active, .modal-measurement.active, .modal-application.active, .modal-questions.active {
         opacity: 1;
         visibility: visible;
         background: rgba(0, 0, 0, 0.38);
     }
-    .modal-consultation.active .modal_content, .modal-measurement.active .modal_content, .modal-application.active .modal_content{
+    .modal-consultation.active .modal_content, .modal-measurement.active .modal_content, .modal-application.active .modal_content, .modal-questions.active .modal_content {
         transform: translate(0px, 0px);
         opacity: 1;
         display: block;
@@ -73,21 +73,27 @@
     }
     .modal_form input:focus, .modal_form textarea:focus{
         outline: none;
-        border: 2px solid #515b76;
+        border: 2px solid black;
     }
     .modal_form input::placeholder, .modal_form textarea::placeholder {
         color: #515b76;
+        font-size: 1rem;
     }
-    @media (max-width: 1280px) {
-        .section_4 .modal_form input::placeholder, .section_4 .modal_form textarea::placeholder {
-            font-size: 12px;
+    @media (max-width: 480px) {
+        .modal_form input::placeholder, .modal_form textarea::placeholder {
+            font-size: 0.875rem;
         }
     }
-
+    @media (max-width: 400px) {
+        .modal_form input::placeholder, .modal_form textarea::placeholder {
+            font-size: 0.75rem;
+        }
+    }
     .banner{
         background-size: cover;
         background-position-x: center;
     }
+
     /* ХЕДЕР, ФУТЕР */
     .blacker_blur {
         position: absolute;
@@ -164,6 +170,7 @@
         background-color: #000000; /* Цвет подчеркивания при появлении линии*/
         transition: width 0.5s;  /* Время эффекта */
     }
+
     /*блок1*/
 
     /*блок2*/
@@ -241,29 +248,16 @@
         right: 0px;
         bottom: 0px;
         z-index: 2;
-        transition: ease all 1.3s;
+        transition: ease all 2.3s;
         background: rgba(0, 0, 0, 0.4);
         border-radius: 6px;
     }
-    .cover.item-1 {
-        background-image: url('../../assets/images/services/service-1.jpg');
-    }
-    .cover.item-2 {
-        background-image: url('../../assets/images/services/service-2.jpg');
-    }
-    .cover.item-3 {
-        background-image: url('../../assets/images/services/service-3.jpg');
-    }
-    .cover.item-4 {
-        background-image: url('../../assets/images/services/service-4.jpg');
-    }
-    .cover.item-5 {
-        background-image: url('../../assets/images/services/service-5.jpg');
-    }
-    .cover.item-6 {
-        background-image: url('../../assets/images/services/service-6.jpg');
-    }
     .cover h3 {
+        transform-style: preserve-3d;
+        transition: ease all 2.3s;
+        transform: translateZ(0px);
+    }
+    .price {
         transform-style: preserve-3d;
         transition: ease all 2.3s;
         transform: translateZ(0px);
@@ -277,6 +271,14 @@
         transform-style: preserve-3d;
         transition: ease transform 2.3s, ease background 0.5s;
         transform: translateZ(-1px) rotatey(-180deg);
+    }
+    .text p{
+        padding-bottom: 0.5rem;
+    }
+    @media (max-width: 480px) {
+        .text p{
+            padding-bottom: 0.25rem;
+        }
     }
     /*блок3*/
 
@@ -359,6 +361,12 @@
         }
     }
 
+    /* блок 4 */
+    .promo-text p{
+        margin-bottom: 0.5rem;
+    }
+
+
         /*блок5*/
      .img-cover {
           -webkit-box-reflect:below 2px linear-gradient(transparent 50%, transparent, #0004);
@@ -375,55 +383,6 @@
     }
 
     /* блок 6 */
-    /*.card-1{*/
-    /*    --image: url('../../assets/images/reviews/photo_1.jpg');*/
-    /*    --angle: 0deg;*/
-    /*    --x: -60%;*/
-    /*    --y: -20%;*/
-    /*}*/
-    /*.card-2{*/
-    /*    --image: url('../../assets/images/reviews/photo_2.jpg');*/
-    /*    --angle: 0deg;*/
-    /*    --x: -20%;*/
-    /*    --y: -20%;*/
-    /*}*/
-    /*.card-3{*/
-    /*    --image: url('../../assets/images/reviews/photo_3.jpg');*/
-    /*    --angle: 0deg;*/
-    /*    --x: 20%;*/
-    /*    --y: -20%;*/
-    /*}*/
-    /*.card-4{*/
-    /*    --image: url('../../assets/images/reviews/photo_4.jpg');*/
-    /*    --angle: 0deg;*/
-    /*    --x: 60%;*/
-    /*    --y: -20%;*/
-    /*}*/
-    /*.card-5{*/
-    /*    --image: url('../../assets/images/reviews/photo_5.jpg');*/
-    /*    --angle: 0deg;*/
-    /*    --x: -60%;*/
-    /*    --y: 20%;*/
-    /*}*/
-
-    /*.card-6{*/
-    /*    --image: url('../../assets/images/reviews/photo_6.jpg');*/
-    /*    --angle: 0deg;*/
-    /*    --x: -20%;*/
-    /*    --y: 20%;*/
-    /*}*/
-    /*.card-7{*/
-    /*    --image: url('../../assets/images/reviews/photo_7.jpg');*/
-    /*    --angle: 0deg;*/
-    /*    --x: 20%;*/
-    /*    --y: 20%;*/
-    /*}*/
-    /*.card-8 {*/
-    /*    --image: url('../../assets/images/reviews/photo_8.jpg');*/
-    /*    --angle: 0deg;*/
-    /*    --x: 60%;*/
-    /*    --y: 20%;*/
-    /*}*/
     .card-1{
         --image: url('../../assets/images/reviews/photo_1.jpg');
         --angle: -15deg;

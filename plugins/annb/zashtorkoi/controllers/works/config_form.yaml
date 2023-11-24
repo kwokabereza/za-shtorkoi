@@ -1,0 +1,10 @@
+name: Works
+form: $/annb/zashtorkoi/models/work/fields.yaml
+modelClass: Annb\ZaShtorkoi\Models\Work
+defaultRedirect: annb/zashtorkoi/works
+create:
+    redirect: 'annb/zashtorkoi/works/update/:id'
+    redirectClose: annb/zashtorkoi/works
+update:
+    redirect: annb/zashtorkoi/works
+    redirectClose: annb/zashtorkoi/works

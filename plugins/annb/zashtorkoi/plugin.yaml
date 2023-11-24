@@ -1,0 +1,23 @@
+plugin:
+    name: 'annb.zashtorkoi::lang.plugin.name'
+    description: 'annb.zashtorkoi::lang.plugin.description'
+    author: AnnB
+    icon: oc-icon-delicious
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Услуги
+        url: annb/zashtorkoi/services
+        icon: icon-certificate
+    main-menu-item2:
+        label: Акции
+        url: annb/zashtorkoi/promos
+        icon: icon-child
+    main-menu-item3:
+        label: 'Мои работы'
+        url: annb/zashtorkoi/works
+        icon: icon-th-large
+    main-menu-item4:
+        label: Отзывы
+        url: annb/zashtorkoi/reviews
+        icon: icon-fire

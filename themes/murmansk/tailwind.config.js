@@ -38,6 +38,7 @@ module.exports = {
             },
             fontFamily: {
                 'serif': ['Cormorant, serif'],
+                'cormorant': ['Cormorant Unicase, serif'],
                 'sans': ['Geologica, sans-serif'],
             },
             fontSize: {
@@ -45,6 +46,7 @@ module.exports = {
             },
             spacing: {
                 '18': '4.5rem',
+                '30': '7.5rem',
                 '38': '9.5rem',
                 '42': '10.5rem',
                 '68': '17rem',

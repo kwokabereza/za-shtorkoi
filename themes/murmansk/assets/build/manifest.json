@@ -31,32 +31,8 @@
     "file": "assets/photo_8-fb668624.jpg",
     "src": "assets/images/reviews/photo_8.jpg"
   },
-  "assets/images/services/service-1.jpg": {
-    "file": "assets/service-1-26e1b80b.jpg",
-    "src": "assets/images/services/service-1.jpg"
-  },
-  "assets/images/services/service-2.jpg": {
-    "file": "assets/service-2-94233128.jpg",
-    "src": "assets/images/services/service-2.jpg"
-  },
-  "assets/images/services/service-3.jpg": {
-    "file": "assets/service-3-0b53d03f.jpg",
-    "src": "assets/images/services/service-3.jpg"
-  },
-  "assets/images/services/service-4.jpg": {
-    "file": "assets/service-4-68d3516e.jpg",
-    "src": "assets/images/services/service-4.jpg"
-  },
-  "assets/images/services/service-5.jpg": {
-    "file": "assets/service-5-30a694d1.jpg",
-    "src": "assets/images/services/service-5.jpg"
-  },
-  "assets/images/services/service-6.jpg": {
-    "file": "assets/service-6-d2798024.jpg",
-    "src": "assets/images/services/service-6.jpg"
-  },
   "src/css/global.css": {
-    "file": "assets/global-2ee493db.css",
+    "file": "assets/global-23c326e6.css",
     "isEntry": true,
     "src": "src/css/global.css"
   },
@@ -73,7 +49,7 @@
     "src": "src/js/global.js"
   },
   "src/js/index.js": {
-    "file": "assets/index-28f560de.js",
+    "file": "assets/index-dacc066e.js",
     "isEntry": true,
     "src": "src/js/index.js"
   }

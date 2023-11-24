@@ -1,0 +1,10 @@
+name: Promos
+form: $/annb/zashtorkoi/models/promo/fields.yaml
+modelClass: Annb\ZaShtorkoi\Models\Promo
+defaultRedirect: annb/zashtorkoi/promos
+create:
+    redirect: 'annb/zashtorkoi/promos/update/:id'
+    redirectClose: annb/zashtorkoi/promos
+update:
+    redirect: annb/zashtorkoi/promos
+    redirectClose: annb/zashtorkoi/promos
