@@ -32,7 +32,7 @@
     "src": "assets/images/reviews/photo_8.jpg"
   },
   "src/css/global.css": {
-    "file": "assets/global-23c326e6.css",
+    "file": "assets/global-6fd70171.css",
     "isEntry": true,
     "src": "src/css/global.css"
   },
@@ -44,7 +44,7 @@
     "css": [
       "assets/global-f47d27a2.css"
     ],
-    "file": "assets/main-1b1a2cae.js",
+    "file": "assets/main-78fa7651.js",
     "isEntry": true,
     "src": "src/js/global.js"
   },
