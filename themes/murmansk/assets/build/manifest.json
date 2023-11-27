@@ -1,50 +1,11 @@
 {
-  "assets/images/reviews/photo_1.jpg": {
-    "file": "assets/photo_1-25e9019e.jpg",
-    "src": "assets/images/reviews/photo_1.jpg"
-  },
-  "assets/images/reviews/photo_2.jpg": {
-    "file": "assets/photo_2-d42dd056.jpg",
-    "src": "assets/images/reviews/photo_6.jpg"
-  },
-  "assets/images/reviews/photo_3.jpg": {
-    "file": "assets/photo_3-438e308d.jpg",
-    "src": "assets/images/reviews/photo_3.jpg"
-  },
-  "assets/images/reviews/photo_4.jpg": {
-    "file": "assets/photo_4-a6a6dcb2.jpg",
-    "src": "assets/images/reviews/photo_4.jpg"
-  },
-  "assets/images/reviews/photo_5.jpg": {
-    "file": "assets/photo_5-bed30e85.jpg",
-    "src": "assets/images/reviews/photo_5.jpg"
-  },
-  "assets/images/reviews/photo_6.jpg": {
-    "file": "assets/photo_2-d42dd056.jpg",
-    "src": "assets/images/reviews/photo_6.jpg"
-  },
-  "assets/images/reviews/photo_7.jpg": {
-    "file": "assets/photo_7-db241625.jpg",
-    "src": "assets/images/reviews/photo_7.jpg"
-  },
-  "assets/images/reviews/photo_8.jpg": {
-    "file": "assets/photo_8-fb668624.jpg",
-    "src": "assets/images/reviews/photo_8.jpg"
-  },
   "src/css/global.css": {
-    "file": "assets/global-6fd70171.css",
+    "file": "assets/global-983c007c.css",
     "isEntry": true,
     "src": "src/css/global.css"
   },
-  "src/js/global.css": {
-    "file": "assets/global-f47d27a2.css",
-    "src": "src/js/global.css"
-  },
   "src/js/global.js": {
-    "css": [
-      "assets/global-f47d27a2.css"
-    ],
-    "file": "assets/main-78fa7651.js",
+    "file": "assets/main-65903f40.js",
     "isEntry": true,
     "src": "src/js/global.js"
   },

@@ -15,3 +15,9 @@ v1.0.5:
 v1.0.6:
     - 'Created table annb_zashtorkoi_reviews'
     - builder_table_create_annb_zashtorkoi_reviews.php
+v1.0.7:
+    - 'Updated table annb_zashtorkoi_reviews'
+    - builder_table_update_annb_zashtorkoi_reviews.php
+v1.0.8:
+    - 'Updated table annb_zashtorkoi_reviews'
+    - builder_table_update_annb_zashtorkoi_reviews_2.php

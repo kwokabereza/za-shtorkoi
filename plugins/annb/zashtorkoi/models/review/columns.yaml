@@ -9,3 +9,18 @@ columns:
         type: text
         searchable: true
         sortable: true
+    xpositiion:
+        label: 'Позиция по оси Х'
+        type: number
+        searchable: true
+        sortable: true
+    yposition:
+        label: 'Позиция по оси У'
+        type: number
+        searchable: true
+        sortable: true
+    angle:
+        label: 'Угол наклона'
+        type: number
+        searchable: true
+        sortable: true

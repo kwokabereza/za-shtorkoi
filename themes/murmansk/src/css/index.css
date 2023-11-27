@@ -384,50 +384,50 @@
 
     /* блок 6 */
     .card-1{
-        --image: url('../../assets/images/reviews/photo_1.jpg');
+        /*--image: url('../../assets/images/reviews/photo_1.jpg');*/
         --angle: -15deg;
         --x: -9%;
         --y: 15%;
     }
     .card-2{
-        --image: url('../../assets/images/reviews/photo_2.jpg');
+        /*--image: url('../../assets/images/reviews/photo_2.jpg');*/
         --angle: -1deg;
         --x: -27%;
         --y: -20%;
     }
     .card-3{
-        --image: url('../../assets/images/reviews/photo_3.jpg');
+        /*--image: url('../../assets/images/reviews/photo_3.jpg');*/
         --angle: -4deg;
         --x: -39%;
         --y: 5%;
     }
     .card-4{
-        --image: url('../../assets/images/reviews/photo_4.jpg');
+        /*--image: url('../../assets/images/reviews/photo_4.jpg');*/
         --angle: 7deg;
         --x: -3%;
         --y: -7%;
     }
     .card-5{
-        --image: url('../../assets/images/reviews/photo_5.jpg');
+        /*--image: url('../../assets/images/reviews/photo_5.jpg');*/
         --angle: -1deg;
-        --x: 25%;
+        --x: 18%;
         --y: 7%;
     }
 
     .card-6{
-        --image: url('../../assets/images/reviews/photo_6.jpg');
+        /*--image: url('../../assets/images/reviews/photo_6.jpg');*/
         --angle: -8deg;
         --x: 20%;
         --y: -19%;
     }
     .card-7{
-        --image: url('../../assets/images/reviews/photo_7.jpg');
+        /*--image: url('../../assets/images/reviews/photo_7.jpg');*/
         --angle: 13deg;
         --x: 45%;
         --y: 16%;
     }
     .card-8 {
-        --image: url('../../assets/images/reviews/photo_8.jpg');
+        /*--image: url('../../assets/images/reviews/photo_8.jpg');*/
         --angle: 0deg;
         --x: 43%;
         --y: -13%;

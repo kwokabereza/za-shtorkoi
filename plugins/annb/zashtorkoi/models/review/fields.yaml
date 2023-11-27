@@ -7,3 +7,15 @@ fields:
             extension: auto
         span: auto
         type: mediafinder
+    angle:
+        label: 'Угол наклона'
+        span: auto
+        type: number
+    xpositiion:
+        label: 'Позиция по оси Х'
+        span: auto
+        type: number
+    yposition:
+        label: 'Позиция по оси У'
+        span: auto
+        type: number

@@ -1,3 +1,13 @@
+[builderList]
+modelClass = "Annb\ZaShtorkoi\Models\Review"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
 <div class="section_6 pb-4 pt-4 md:pb-6 md:pt-6 lg:pb-8 lg:pt-8 xl:pb-10 xl:pt-10" id="reviews">
     <div class="container">
         <div class="mx-auto">
@@ -7,15 +17,154 @@
                 <span class="border-b-2 border-darkbeige w-12 sm:w-16 xl:w-20"></span>
             </div>
             <div class="card-container mx-auto relative">
-                <div class="card card-1 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>
-                <div class="card card-2 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>
-                <div class="card card-3 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>
-                <div class="card card-4 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>
-                <div class="card card-5 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>
-                <div class="card card-6 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>
-                <div class="card card-7 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>
-                <div class="card card-8 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>
+                {% set records = builderList.records %}
+                {% for record in records %}
+                {% if record.id == 1 %}
+                    <div class="card card-1 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer">
+                        {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                        {% partial "helpers/image"
+                        src= img
+                        mobSrc= img
+                        width = 1440
+                        height = 1920
+                        mobWidth = 1440
+                        mobHeight = 1920
+                        alt = "Отзывы"
+                        class= "absolute top-[5%] left-[6%] w-[88.5%] h-[78.5%] object-cover"
+                        %}
+                    </div>
+                {% endif %}
+                {% if record.id == 2 %}
+                    <div class="card card-2 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer">
+                        {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                        {% partial "helpers/image"
+                        src= img
+                        mobSrc= img
+                        width = 1440
+                        height = 1920
+                        mobWidth = 1440
+                        mobHeight = 1920
+                        alt = "Отзывы"
+                        class= "absolute top-[5%] left-[6%] w-[88.5%] h-[78.5%] object-cover"
+                        %}
+                    </div>
+                {% endif %}
+                {% if record.id == 3 %}
+                    <div class="card card-3 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer">
+                        {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                        {% partial "helpers/image"
+                        src= img
+                        mobSrc= img
+                        width = 1440
+                        height = 1920
+                        mobWidth = 1440
+                        mobHeight = 1920
+                        alt = "Отзывы"
+                        class= "absolute top-[5%] left-[6%] w-[88.5%] h-[78.5%] object-cover"
+                        %}
+                    </div>
+                {% endif %}
+                {% if record.id == 4 %}
+                    <div class="card card-4 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer">
+                        {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                        {% partial "helpers/image"
+                        src= img
+                        mobSrc= img
+                        width = 1440
+                        height = 1920
+                        mobWidth = 1440
+                        mobHeight = 1920
+                        alt = "Отзывы"
+                        class= "absolute top-[5%] left-[6%] w-[88.5%] h-[78.5%] object-cover"
+                        %}
+                    </div>
+                {% endif %}
+                {% if record.id == 5 %}
+                    <div class="card card-5 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer">
+                        {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                        {% partial "helpers/image"
+                        src= img
+                        mobSrc= img
+                        width = 1440
+                        height = 1920
+                        mobWidth = 1440
+                        mobHeight = 1920
+                        alt = "Отзывы"
+                        class= "absolute top-[5%] left-[6%] w-[88.5%] h-[78.5%] object-cover"
+                        %}
+                    </div>
+                {% endif %}
+                {% if record.id == 6 %}
+                    <div class="card card-6 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer">
+                        {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                        {% partial "helpers/image"
+                        src= img
+                        mobSrc= img
+                        width = 1440
+                        height = 1920
+                        mobWidth = 1440
+                        mobHeight = 1920
+                        alt = "Отзывы"
+                        class= "absolute top-[5%] left-[6%] w-[88.5%] h-[78.5%] object-cover"
+                        %}
+                    </div>
+                {% endif %}
+                {% if record.id == 7 %}
+                    <div class="card card-7 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer">
+                        {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                        {% partial "helpers/image"
+                        src= img
+                        mobSrc= img
+                        width = 1440
+                        height = 1920
+                        mobWidth = 1440
+                        mobHeight = 1920
+                        alt = "Отзывы"
+                        class= "absolute top-[5%] left-[6%] w-[88.5%] h-[78.5%] object-cover"
+                        %}
+                    </div>
+                {% endif %}
+                {% if record.id == 8 %}
+                    <div class="card card-8 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer">
+                        {% set img = "/storage/app/media/" ~ record.mediafinder %}
+                        {% partial "helpers/image"
+                        src= img
+                        mobSrc= img
+                        width = 1440
+                        height = 1920
+                        mobWidth = 1440
+                        mobHeight = 1920
+                        alt = "Отзывы"
+                        class= "absolute top-[5%] left-[6%] w-[88.5%] h-[78.5%] object-cover"
+                        %}
+                    </div>
+                {% endif %}
+            {% endfor %}
             </div>
         </div>
     </div>
 </div>
+
+
+<!--<div class="card-container mx-auto relative">-->
+<!--    <div class="card card-1 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>-->
+<!--    <div class="card card-2 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>-->
+<!--    <div class="card card-3 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>-->
+<!--    <div class="card card-4 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>-->
+<!--    <div class="card card-5 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>-->
+<!--    <div class="card card-6 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>-->
+<!--    <div class="card card-7 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>-->
+<!--    <div class="card card-8 absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"></div>-->
+<!--</div>-->
+
+{# <div class="card-container mx-auto relative">
+    {% set records = builderList.records %}
+    {% for record in records %}
+    <div class="card absolute top-0 left-0 w-full h-full bg-white rounded-md cursor-pointer"
+         style="transform: translate({{ record.xposition }}%, {{ record.yposition }}%)
+                               scale(0.35)
+                               rotate({{ record.angle }}deg);">
+
+    </div>
+    {% endfor %}
+</div> #}
