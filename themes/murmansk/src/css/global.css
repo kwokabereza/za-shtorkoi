@@ -1,8 +1,7 @@
 @import './tailwind.css';
 @import './index.css';
 @import './common.css';
-@import './header.css';
-@import './fonts.css';
+
 
 @layer base {
     /*базовые стили*/
